@@ -1,27 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "ClashDisplay-Variable";
+  src: url("/fonts/clashdisplay/ClashDisplay-Variable.woff2") format("woff2"),
+    url("/fonts/clashdisplay/ClashDisplay-Variable.woff") format("woff"),
+    url("/fonts/clashdisplay/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clashdisplay/ClashDisplay-Extralight.woff2") format("woff2"),
+    url("/fonts/clashdisplay/ClashDisplay-Extralight.woff") format("woff"),
+    url("/fonts/clashdisplay/ClashDisplay-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clashdisplay/ClashDisplay-Light.woff2") format("woff2"),
+    url("/fonts/clashdisplay/ClashDisplay-Light.woff") format("woff"),
+    url("/fonts/clashdisplay/ClashDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clashdisplay/ClashDisplay-Regular.woff2") format("woff2"),
+    url("/fonts/clashdisplay/ClashDisplay-Regular.woff") format("woff"),
+    url("/fonts/clashdisplay/ClashDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clashdisplay/ClashDisplay-Medium.woff2") format("woff2"),
+    url("/fonts/clashdisplay/ClashDisplay-Medium.woff") format("woff"),
+    url("/fonts/clashdisplay/ClashDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clashdisplay/ClashDisplay-Semibold.woff2") format("woff2"),
+    url("/fonts/clashdisplay/ClashDisplay-Semibold.woff") format("woff"),
+    url("/fonts/clashdisplay/ClashDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clashdisplay/ClashDisplay-Bold.woff2") format("woff2"),
+    url("/fonts/clashdisplay/ClashDisplay-Bold.woff") format("woff"),
+    url("/fonts/clashdisplay/ClashDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  background-color: #150e28;
+  color: #fff;
+  font-family: "Montserrat";
+}
+
+.logo {
+  font-family: "ClashDisplay";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.logo > span:nth-of-type(2) {
+  color: #d434fe;
+}
+
+.navbar-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 63px 128px 25px 128px;
+}
+
+.navbar-main > div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  gap: 121px;
+}
+
+.navbar-main ul {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.cta-button1, .navbar-main > div:nth-of-type(2) > a {
+  padding: 16px 52px;
+  display: inline-block;
+  border-radius: 4px;
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+}
+
+#mobile-Hamburger-menu {
+  display: none;
+}
+
+.setbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.setbody > div {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+}
+
+.divider {
+  background: rgba(255, 255, 255, 0.18);
+  height: 1px;
+  width: 100%;
+}
+
+.hbb-12 {
+  padding-top: 69px;
+  padding-left: 128px;
+}
+
+.hb-d1 {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 55px;
+  padding: 32px 32px 36px 32px;
+}
+
+.hb-d1 > h5 {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hb-d1 > div {
+  float: right;
+  padding-right: 26px;
+  padding-top: 2px;
+}
+
+.hb2-h1 {
+  font-family: 'ClashDisplay';
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: grid;white-space: nowrap;
+  row-gap: 3px;
+}
+
+.hb2-h1 span {
+  color: #D434FE;
+}
+
+.hbb-12 > p {
+  padding-top: 8px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166%; /* 33.2px */
+  max-width: 522px;
+}
+
+.hbb-12 > div:nth-of-type(2) {
+  padding-top: 41px;
+}
+
+.hb-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.blur1 {
+  position: absolute;
+  top: 0;
+  z-index: -56;
+  left: 0;
+}
+
+.blur2 > img {
+  filter: opacity(.68);
+}
+
+.blur2 {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  justify-content: end;
+  align-items: end;
+}
+
+
+.hb-body > div:nth-of-type(2) > div:nth-of-type(1) > img {
+  filter: grayscale(0.5);
 }
