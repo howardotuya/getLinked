@@ -1,7 +1,8 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import menu from "@/public/images/menu.svg";
-import vector1 from "@/public/images/vector1.png";
+import vector1 from "@/public/images/vector11.png";
 import vector2 from "@/public/images/vectorxxx.png";
 import vector3 from "@/public/images/vector3.svg";
 import vector4 from "@/public/images/vector4.png";
@@ -13,10 +14,45 @@ import bulb from "@/public/images/bulb.png";
 import chain from "@/public/images/chain.png";
 import spark from "@/public/images/spark.png";
 import mpurple from "@/public/images/m-purple.png";
+import cancel from "@/public/images/cancel.svg";
+import { useEffect } from "react";
 
 export default function Home() {
+
+  useEffect(() => {
+    document.getElementById("mobile-sidebar").style.display = "none";
+  }, [])
+
+  const popuphandler = () => {
+    const popup = document.getElementById("mobile-sidebar")
+
+    if (popup.style.display == "none") {
+      popup.style.display = "block";
+    } else {
+      popup.style.display = "none";
+    }
+  };
+
+
   return (
     <>
+      <nav id="mobile-sidebar" className="fixed hidden top-0 bottom-0 right-0 left-0 bg-[#150e28] z-[999]">
+        <div className="pt-10 pl-12 pr-[52px] grid">
+          <div onClick={popuphandler} className="self-end justify-self-end">
+            <Image src={cancel} alt="cancel" />
+          </div>
+          <ul className="grid pt-14 pb-7 font-medium gap-y-5">
+            <li>Timeline</li>
+            <li>Overview</li>
+            <li>FAQs</li>
+            <li>Contact</li>
+          </ul>
+          <Link className="cta-button1 justify-self-start" href="#">
+            Register
+          </Link>
+        </div>
+      </nav>
+
       <header className=" relative">
         <div>
           <nav className="navbar-main">
@@ -33,7 +69,7 @@ export default function Home() {
               </ul>
               <Link href="#">Register</Link>
             </div>
-            <div id="mobile-Hamburger-menu">
+            <div onClick={popuphandler} id="mobile-Hamburger-menu">
               <Image src={menu} alt="menu" />
             </div>
           </nav>
@@ -88,7 +124,7 @@ export default function Home() {
                 </h4>
               </div>
             </div>
-            <div className="absolute grayscale max-w-[419px] lg:max-w-none right-0 bottom-0 z-[-9]">
+            <div className="absolute grayscale max-w-[419px] lg:max-w-none right-0 bottom-0 ">
               <Image src={LImg1} alt="change" />
             </div>
             <div className="z-20 absolute right-[32px] bottom-[42px] max-w-[337px] lg:max-w-[667px]">
@@ -131,14 +167,14 @@ export default function Home() {
           <Image src={vector1} alt="purple blur" />
         </span>
 
-        <span className="hidden lg:inline-flex blur2"> 
+        <span className="hidden lg:inline-flex blur2">
           <Image src={vector2} alt="purple blur" />
         </span>
       </header>
 
       <span className="block w-full">
         <span className="block divider"></span>
-      </span> 
+      </span>
     </>
   );
 }
