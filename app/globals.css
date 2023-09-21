@@ -136,7 +136,7 @@ body {
 }
 
 .setbody > div {
-  max-width: 1440px;
+  max-width: 1517px;
   width: 100%;
   height: 100%;
 }
@@ -152,7 +152,7 @@ body {
   width: 100%;
   justify-content: end;
   flex-direction: column;
-  align-items:end;
+  align-items: end;
   padding-right: 55px;
   padding: 31px 34px 40px 0px;
 }
@@ -270,7 +270,75 @@ body {
   display: none;
 }
 
+.bigIdea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
+  padding: 29px 34px 69px 34px;
+}
+
+.bigIdea-right {
+  display: grid;
+  row-gap: 8px;
+  justify-items: center;
+  text-align: center;
+}
+
+.heading2 {
+  color: #fff;
+  font-family: "ClashDisplay";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133%;
+}
+
+  .heading2 > span {
+    color: #d434fe;
+  }
+
+  .pbody {
+    color: #fff;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.5px;
+  }
+
 @media only screen and (min-width: 1024px) {
+
+  .bigIdea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 106px;
+    padding: 62px 148px 78px 240px;
+  }
+  
+  .bigIdea-right {
+    display: grid;
+    column-gap: 16px;
+    text-align: left;
+    row-gap: unset;
+  }
+  
+  .heading2 {
+    color: #fff;
+    font-family: "ClashDisplay";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+  }
+
+  .pbody {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.5px; /* 196.429% */
+  }
 
   .disx {
     display: block;
@@ -365,7 +433,7 @@ body {
 
   .hbb-12 > div:nth-of-type(2) {
     padding-top: 41px;
-  }  
+  }
 
   .cta-button1,
   .navbar-main > div:nth-of-type(2) > a {
@@ -387,7 +455,7 @@ body {
     display: flex;
     padding-bottom: 95px;
   }
-  
+
   .unica-h4 {
     font-family: "Unica One";
     font-size: 64px;
@@ -401,8 +469,8 @@ body {
     display: flex;
     padding-bottom: 95px;
   }
-  
+
   #mobile-sidebar {
-    display: none!important;
+    display: none !important;
   }
 }

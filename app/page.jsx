@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import menu from "@/public/images/menu.svg";
 import vector1 from "@/public/images/vector11.png";
 import vector2 from "@/public/images/vectorxxx.png";
@@ -15,16 +16,18 @@ import chain from "@/public/images/chain.png";
 import spark from "@/public/images/spark.png";
 import mpurple from "@/public/images/m-purple.png";
 import cancel from "@/public/images/cancel.svg";
-import { useEffect } from "react";
+import Img1 from "@/public/images/Img1.png";
+import vector5 from "@/public/images/vector5.png";
+import vector6 from "@/public/images/vector6.png";
+import curlyArrow from "@/public/images/curly-arrow.png";
 
 export default function Home() {
-
   useEffect(() => {
     document.getElementById("mobile-sidebar").style.display = "none";
-  }, [])
+  }, []);
 
   const popuphandler = () => {
-    const popup = document.getElementById("mobile-sidebar")
+    const popup = document.getElementById("mobile-sidebar");
 
     if (popup.style.display == "none") {
       popup.style.display = "block";
@@ -33,10 +36,12 @@ export default function Home() {
     }
   };
 
-
   return (
     <>
-      <nav id="mobile-sidebar" className="fixed hidden top-0 bottom-0 right-0 left-0 bg-[#150e28] z-[999]">
+      <nav
+        id="mobile-sidebar"
+        className="fixed hidden top-0 bottom-0 right-0 left-0 bg-[#150e28] z-[999]"
+      >
         <div className="pt-10 pl-12 pr-[52px] grid">
           <div onClick={popuphandler} className="self-end justify-self-end">
             <Image src={cancel} alt="cancel" />
@@ -52,8 +57,7 @@ export default function Home() {
           </Link>
         </div>
       </nav>
-
-      <header className=" relative">
+      <header className="setbody relative">
         <div>
           <nav className="navbar-main">
             <div className="logo">
@@ -171,10 +175,36 @@ export default function Home() {
           <Image src={vector2} alt="purple blur" />
         </span>
       </header>
-
       <span className="block w-full">
         <span className="block divider"></span>
       </span>
+
+      <main className="setbody">
+        <div>
+          <section className="bigIdea relative">
+            <div className="left max-w-[264px] lg:max-w-[490px] h-auto w-full">
+              <Image src={Img1} alt="The Big Idea" />
+            </div>
+            <div className="bigIdea-right">
+              <h2 className="heading2 max-w-[249px] lgmax-w-[399px]">
+                Introduction to getlinked <span>tech Hackathon 1.0</span>
+              </h2>
+              <p className="pbody w-full max-w-[321px] lg:max-w-[530px]">
+                Our tech hackathon is a melting pot of visionaries, and its
+                purpose is as clear as day: to shape the future. Whether you're
+                a coding genius, a design maverick, or a concept wizard, you'll
+                have the chance to transform your ideas into reality. Solving
+                real-world problems, pushing the boundaries of technology, and
+                creating solutions that can change the world, that's what we're
+                all about!
+              </p>
+            </div>
+            <div className="absolute top-[223px] left-[206px] max-w-[21px]"><Image src={vector5} alt="" /></div>
+            <div className="absolute top-[216px] right-[161px] max-w-[30px]"><Image src={vector6} alt="" /></div>
+            <div className="absolute rotate-[-70.92deg] top-[296px] lg:top-auto lg:bottom-[61px] left-[181px] lg:left-[715px] max-w-[22px] lg:max-w-[49px]"><Image src={curlyArrow} alt="" /></div>
+          </section>
+        </div>
+      </main>
     </>
   );
 }
