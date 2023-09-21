@@ -401,4 +401,8 @@ body {
     display: flex;
     padding-bottom: 95px;
   }
+  
+  #mobile-sidebar {
+    display: none!important;
+  }
 }
