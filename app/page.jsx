@@ -19,6 +19,7 @@ import cancel from "@/public/images/cancel.svg";
 import Img1 from "@/public/images/Img1.png";
 import Img2 from "@/public/images/Img2.png";
 import Img3 from "@/public/images/Img3.png";
+import Img4 from "@/public/images/Img4.png";
 import Img22 from "@/public/images/Img22.png";
 import vector5 from "@/public/images/vector5.png";
 import vector6 from "@/public/images/vector6.png";
@@ -169,7 +170,7 @@ export default function Home() {
             <div className="z-50 top-[81px] left-[120px] lg:top-[68px] lg:left-[185px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
               <Image className="w-full h-auto" src={sstar} alt="" />
             </div>
-            <div className="z-50 bottom-[146px] lg:left-[571px] absolute inline-flex justify-center items-center w-[6px] h-[8px] lg:w-[26px] lg:h-8">
+            <div className="z-50 top-[275px] lg:top-auto right-[91px] lg:right-auto lg:bottom-[146px] lg:left-[571px] absolute inline-flex justify-center items-center w-[6px] h-[8px] lg:w-[26px] lg:h-8">
               <Image className="w-full h-auto" src={star} alt="" />
             </div>
           </div>
@@ -216,20 +217,22 @@ export default function Home() {
                 that&apos;s what we&apos;re all about!
               </p>
             </div>
-            <div className="absolute top-[223px] left-[206px] max-w-[21px]">
+            <div className="absolute top-[112px] lg:top-[223px] left-[57px] lg:left-[206px] lg:max-w-[21px] max-w-[11px]">
               <Image src={vector5} alt="" />
             </div>
-            <div className="absolute top-[216px] right-[161px] max-w-[30px]">
+            <div className="absolute top-[366px] lg:top-[216px] right-[44px] lg:right-[161px] max-w-[8px] lg:max-w-[30px]">
               <Image src={vector6} alt="" />
             </div>
             <div className="absolute top-[296px] lg:top-auto lg:bottom-[61px] left-[181px] lg:left-[715px] max-w-[22px] lg:max-w-[49px]">
               <Image src={curlyArrow} alt="" />
             </div>
           </section>
+
           {/* divider */}
           <span className="block w-full">
             <span className="block divider"></span>
           </span>
+
           {/* Rules and Regulations Section */}
           <section className="randg">
             <div className="bigIdea-right">
@@ -269,10 +272,12 @@ export default function Home() {
               <Image className="w-full h-auto" src={sstar} alt="" />
             </div>
           </section>
+
           {/* divider */}
           <span className="block w-full">
             <span className="block divider"></span>
           </span>
+
           {/* Judging Criteria Key attributes */}
           <section className="jcka">
             <div className="left">
@@ -327,6 +332,64 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+            <div className="absolute left-[173px] top-[15px] lg:top-[92px] lg:left-[215px] max-w-[13px] lg:max-w-[30px]">
+              <Image src={vector6} alt="" />
+            </div>
+            <div className="z-50 top-[221px] left-[212px] lg:top-[470px] lg:left-[421px] absolute inline-flex justify-center items-center w-[12px] h-[14px] lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={star} alt="" />
+            </div>
+            <div className="z-50 bottom-[76px] right-[50px] lg:bottom-[171px] lg:right-0 lg:left-[733px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={sstar} alt="" />
+            </div>
+          </section>
+
+          {/* divider */}
+          <span className="block w-full">
+            <span className="block divider"></span>
+          </span>
+
+          {/* FAQs */}
+          <section className="faqs">
+            <div className="left">
+              <div className="faqtt">
+                <h2 className="heading2 max-w-[158px] lg:max-w-[253px]">
+                  Frequently Ask <span>Question</span>
+                </h2>
+                <p className="pbody pbody2 text-xs lg:text-sm max-w-[293px] lg:max-w-[342px]">
+                  We got answers to the questions that you might want to ask
+                  about getlinked Hackathon 1.0
+                </p>
+              </div>
+              <div className="faqtt2">
+                <div>
+                  <p>Can I work on a project I started before the hackathon?</p>
+                  <p>+</p>
+                </div>
+                <div>
+                  <p>What happens if I need help during the hackathon?</p>
+                  <p>+</p>
+                </div>
+                <div>
+                  <p>What happens if I don't have an idea for a project?</p>
+                  <p>+</p>
+                </div>
+                <div>
+                  <p>Can I join a team or do I have to come with one?</p>
+                  <p>+</p>
+                </div>
+                <div>
+                  <p>What happens after the hackathon ends</p>
+                  <p>+</p>
+                </div>
+                <div>
+                  <p>Can I work on a project I started before the hackathon?</p>
+                  <p>+</p>
+                </div>
+              </div>
+            </div>
+            <div className="right max-w-[741px]">
+              <Image src={Img4} alt="" />
+            </div>
           </section>
         </div>
       </main>
@@ -341,7 +404,13 @@ export default function Home() {
       <div className="absolute mix-blend-hard-light block lg:hidden top-[1449px] left-0 right-0 -z-50">
         <Image src={vector15} alt="Purple Blur" />
       </div>
+      <div className="absolute mix-blend-hard-light block lg:hidden top-[2378px] left-[-14px] -z-50">
+        <Image src={vector15} alt="Purple Blur" />
+      </div>
       <div className="absolute mix-blend-hard-light block lg:hidden top-[1747px] right-0 -z-50">
+        <Image src={vector14} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light block lg:hidden top-[3041px] right-0 -z-50">
         <Image src={vector14} alt="Purple Blur" />
       </div>
       <div className="absolute mix-blend-hard-light hidden lg:block max-w-[1037px] top-[2406px] left-[-145px] -z-50">
