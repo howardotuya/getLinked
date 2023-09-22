@@ -221,12 +221,12 @@ export default function Home() {
               </h2>
               <p className="pbody w-full max-w-[321px] lg:max-w-[530px]">
                 Our tech hackathon is a melting pot of visionaries, and its
-                purpose is as clear as day: to shape the future. Whether you're
-                a coding genius, a design maverick, or a concept wizard, you'll
-                have the chance to transform your ideas into reality. Solving
-                real-world problems, pushing the boundaries of technology, and
-                creating solutions that can change the world, that's what we're
-                all about!
+                purpose is as clear as day: to shape the future. Whether
+                you&apos;re a coding genius, a design maverick, or a concept
+                wizard, you&apos;ll have the chance to transform your ideas into
+                reality. Solving real-world problems, pushing the boundaries of
+                technology, and creating solutions that can change the world,
+                that&apos;s what we&apos;re all about!
               </p>
             </div>
             <div className="max-w-[294px] lg:max-w-[664px]">
