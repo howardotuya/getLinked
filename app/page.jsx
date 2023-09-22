@@ -18,10 +18,16 @@ import mpurple from "@/public/images/m-purple.png";
 import cancel from "@/public/images/cancel.svg";
 import Img1 from "@/public/images/Img1.png";
 import Img2 from "@/public/images/Img2.png";
+import Img3 from "@/public/images/Img3.png";
 import Img22 from "@/public/images/Img22.png";
 import vector5 from "@/public/images/vector5.png";
 import vector6 from "@/public/images/vector6.png";
 import curlyArrow from "@/public/images/curly-arrow.png";
+import vector12 from "@/public/images/vector12.png";
+import vector13 from "@/public/images/vector13.png";
+import vector14 from "@/public/images/vector14.png";
+import vector15 from "@/public/images/vector15.png";
+import vector16 from "@/public/images/vector16.png";
 
 export default function Home() {
   useEffect(() => {
@@ -59,6 +65,7 @@ export default function Home() {
           </Link>
         </div>
       </nav>
+
       <header className="setbody relative">
         <div>
           <nav className="navbar-main">
@@ -133,14 +140,17 @@ export default function Home() {
             <div className="absolute grayscale max-w-[419px] lg:max-w-none right-0 bottom-0 ">
               <Image src={LImg1} alt="change" />
             </div>
+
+            {/* Here are absolute Images at the right side - blue and metric asset */}
             <div className="z-20 absolute right-[32px] bottom-[42px] max-w-[337px] lg:max-w-[667px]">
-              <Image src={LImg2} alt="change" />
+              <Image src={LImg2} alt="Blue World Spiral" />
             </div>
             <span className="disx -z-10 absolute right-0 bottom-0">
-              <Image src={vector4} alt="spiral" />
+              <Image src={vector4} alt="metric" />
             </span>
           </div>
 
+          {/* SVG's in the header or above the fold */}
           <div>
             <div className="z-50 top-[89px] right-[99px] lg:right-auto lg:top-[152px] lg:left-[644px] absolute inline-flex justify-center items-center w-[18px] h-[26px] lg:w-[53px] lg:h-auto">
               <Image className="w-full h-auto" src={bulb} alt="" />
@@ -165,25 +175,30 @@ export default function Home() {
           </div>
         </div>
 
-        <span className="inline-flex -z-50 absolute top-[92px] left-0">
+        {/* Mobile Blur for Left Side  */}
+        <span className="inline-flex lg:hidden -z-50 absolute top-[92px] left-0">
           <Image src={mpurple} alt="purple blur" />
         </span>
 
+        {/* Desktop Blur for Left Side  */}
         <span className="hidden lg:inline-flex blur1">
           <Image src={vector1} alt="purple blur" />
         </span>
 
-        <span className="hidden lg:inline-flex blur2">
+        {/* Desktop Blur for Left Side  */}
+        <span className="hidden mix-blend-hard-light lg:inline-flex blur2">
           <Image src={vector2} alt="purple blur" />
         </span>
       </header>
 
       <main className="setbody">
+        {/* divider */}
         <span className="block w-full">
           <span className="block divider"></span>
         </span>
         <div>
-          <section className="bigIdea relative">
+          {/* Big idea Section */}
+          <section className="bigIdea">
             <div className="left max-w-[264px] lg:max-w-[490px] h-auto w-full">
               <Image src={Img1} alt="The Big Idea" />
             </div>
@@ -211,9 +226,11 @@ export default function Home() {
               <Image src={curlyArrow} alt="" />
             </div>
           </section>
+          {/* divider */}
           <span className="block w-full">
             <span className="block divider"></span>
           </span>
+          {/* Rules and Regulations Section */}
           <section className="randg">
             <div className="bigIdea-right">
               <h2 className="heading2 max-w-[107px] lg:max-w-[170px]">
@@ -229,13 +246,110 @@ export default function Home() {
                 that&apos;s what we&apos;re all about!
               </p>
             </div>
-            <div className="max-w-[294px] lg:max-w-[664px]">
-              <Image className="hidden lg:block" src={Img2} alt="" />
-              <Image className="lg:hidden block" src={Img22} alt="" />
+            <div className="max-w-[294px] w-full inline-flex justify-center items-center lg:max-w-[604px]">
+              <Image
+                className="hidden lg:block w-full h-auto shrink-0"
+                src={Img2}
+                alt=""
+              />
+              <Image
+                className="lg:hidden block w-full h-auto shrink-0"
+                src={Img22}
+                alt=""
+              />
+            </div>
+
+            <div className="z-50 top-[442px] right-[42px] lg:right-auto lg:top-[116px] lg:left-[439px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={star} alt="" />
+            </div>
+            <div className="z-50 top-[185px] left-[43px] lg:top-auto lg:bottom-[167px] lg:left-[741px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={sstar} alt="" />
+            </div>
+            <div className="z-50 bottom-[19px] left-[108px] absolute inline-flex lg:hidden justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={sstar} alt="" />
+            </div>
+          </section>
+          {/* divider */}
+          <span className="block w-full">
+            <span className="block divider"></span>
+          </span>
+          {/* Judging Criteria Key attributes */}
+          <section className="jcka">
+            <div className="left">
+              <Image src={Img3} alt="" />
+            </div>
+            <div className="right">
+              <div>
+                <h2 className="heading2 max-w-[167px] lg:max-w-[267px]">
+                  Judging Criteria <span>Key attributes</span>
+                </h2>
+                <div className="jcka-p">
+                  <p>
+                    <span>Innovation and Creativity:</span> Evaluate the
+                    uniqueness and creativity of the solution. Consider whether
+                    it addresses a real-world problem in a novel way or
+                    introduces innovative features.
+                  </p>
+                  <p>
+                    <span>Functionality:</span> Assess how well the solution
+                    works. Does it perform its intended functions effectively
+                    and without major issues? Judges would consider the
+                    completeness and robustness of the solution.
+                  </p>
+                  <p>
+                    <span>Impact and Relevance:</span> Determine the potential
+                    impact of the solution in the real world. Does it address a
+                    significant problem, and is it relevant to the target
+                    audience? Judges would assess the potential social,
+                    economic, or environmental benefits.
+                  </p>
+                  <p>
+                    <span>Technical Complexity:</span> Evaluate the technical
+                    sophistication of the solution. Judges would consider the
+                    complexity of the code, the use of advanced technologies or
+                    algorithms, and the scalability of the solution.
+                  </p>
+                  <p>
+                    <span>Adherence to Hackathon Rules:</span> Judges will
+                    Ensure that the team adhered to the rules and guidelines of
+                    the hackathon, including deadlines, use of specific
+                    technologies or APIs, and any other competition-specific
+                    requirements.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <Link
+                  className="cta-button2 lg:justify-self-start justify-self-center"
+                  href="#"
+                >
+                  Read More
+                </Link>
+              </div>
             </div>
           </section>
         </div>
       </main>
+
+      {/* Assets that are positioned based on webpage height */}
+      <div className="absolute mix-blend-hard-light hidden lg:block max-w-[1037px] top-[1319px] left-0 -z-50">
+        <Image src={vector13} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light hidden lg:block max-w-[1037px] top-[1614px] right-0 -z-50">
+        <Image src={vector12} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light block lg:hidden top-[1449px] left-0 right-0 -z-50">
+        <Image src={vector15} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light block lg:hidden top-[1747px] right-0 -z-50">
+        <Image src={vector14} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light hidden lg:block max-w-[1037px] top-[2406px] left-[-145px] -z-50">
+        <Image src={vector13} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light hidden lg:block top-[2642px] right-0 -z-50">
+        <Image src={vector16} alt="Purple Blur" />
+      </div>
     </>
   );
 }
