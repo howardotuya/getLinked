@@ -17,6 +17,8 @@ import spark from "@/public/images/spark.png";
 import mpurple from "@/public/images/m-purple.png";
 import cancel from "@/public/images/cancel.svg";
 import Img1 from "@/public/images/Img1.png";
+import Img2 from "@/public/images/Img2.png";
+import Img22 from "@/public/images/Img22.png";
 import vector5 from "@/public/images/vector5.png";
 import vector6 from "@/public/images/vector6.png";
 import curlyArrow from "@/public/images/curly-arrow.png";
@@ -175,33 +177,62 @@ export default function Home() {
           <Image src={vector2} alt="purple blur" />
         </span>
       </header>
-      <span className="block w-full">
-        <span className="block divider"></span>
-      </span>
 
       <main className="setbody">
+        <span className="block w-full">
+          <span className="block divider"></span>
+        </span>
         <div>
           <section className="bigIdea relative">
             <div className="left max-w-[264px] lg:max-w-[490px] h-auto w-full">
               <Image src={Img1} alt="The Big Idea" />
             </div>
             <div className="bigIdea-right">
-              <h2 className="heading2 max-w-[249px] lgmax-w-[399px]">
+              <h2 className="heading2 max-w-[249px] lg:max-w-[399px]">
                 Introduction to getlinked <span>tech Hackathon 1.0</span>
               </h2>
               <p className="pbody w-full max-w-[321px] lg:max-w-[530px]">
                 Our tech hackathon is a melting pot of visionaries, and its
-                purpose is as clear as day: to shape the future. Whether you&apos;re
-                a coding genius, a design maverick, or a concept wizard, you&apos;ll
+                purpose is as clear as day: to shape the future. Whether
+                you&apos;re a coding genius, a design maverick, or a concept
+                wizard, you&apos;ll have the chance to transform your ideas into
+                reality. Solving real-world problems, pushing the boundaries of
+                technology, and creating solutions that can change the world,
+                that&apos;s what we&apos;re all about!
+              </p>
+            </div>
+            <div className="absolute top-[223px] left-[206px] max-w-[21px]">
+              <Image src={vector5} alt="" />
+            </div>
+            <div className="absolute top-[216px] right-[161px] max-w-[30px]">
+              <Image src={vector6} alt="" />
+            </div>
+            <div className="absolute top-[296px] lg:top-auto lg:bottom-[61px] left-[181px] lg:left-[715px] max-w-[22px] lg:max-w-[49px]">
+              <Image src={curlyArrow} alt="" />
+            </div>
+          </section>
+          <span className="block w-full">
+            <span className="block divider"></span>
+          </span>
+          <section className="randg">
+            <div className="bigIdea-right">
+              <h2 className="heading2 max-w-[107px] lg:max-w-[170px]">
+                Rules and <span>Guidelines</span>
+              </h2>
+              <p className="pbody w-full max-w-[321px] lg:max-w-[530px]">
+                Our tech hackathon is a melting pot of visionaries, and its
+                purpose is as clear as day: to shape the future. Whether you're
+                a coding genius, a design maverick, or a concept wizard, you'll
                 have the chance to transform your ideas into reality. Solving
                 real-world problems, pushing the boundaries of technology, and
-                creating solutions that can change the world, that&apos;s what we&apos;re
+                creating solutions that can change the world, that's what we're
                 all about!
               </p>
             </div>
-            <div className="absolute top-[223px] left-[206px] max-w-[21px]"><Image src={vector5} alt="" /></div>
-            <div className="absolute top-[216px] right-[161px] max-w-[30px]"><Image src={vector6} alt="" /></div>
-            <div className="absolute rotate-[-70.92deg] top-[296px] lg:top-auto lg:bottom-[61px] left-[181px] lg:left-[715px] max-w-[22px] lg:max-w-[49px]"><Image src={curlyArrow} alt="" /></div>
+            <div className="max-w-[294px] lg:max-w-[664px]">
+              <Image className="hidden lg:block" src={Img2} alt="" />
+              <Image className="lg:hidden block" src={Img22} alt="" />
+            </div>
           </section>
         </div>
       </main>
