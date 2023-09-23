@@ -89,6 +89,10 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  overflow-x: hidden;
+}
+
 .logo {
   font-family: "ClashDisplay";
   font-size: 15px;
