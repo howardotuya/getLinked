@@ -665,7 +665,7 @@ export default function Home() {
 
           {/* Prizes and Rewards */}
           <section className="pag flex flex-col lg:px-[106px] pt-[74px] pb-[89px] lg:pb-[149px] bg-[#110B21]">
-            <div className="right-intro flex flex-col lg:items-start items-center self-center lg:pr-[164px] lg:self-end">
+            <div className="right-intro z-[30] flex flex-col lg:items-start items-center self-center lg:pr-[164px] lg:self-end">
               <h2 className="heading2 text-center lg:text-left max-w-[109px] lg:max-w-[174px]">
                 Prizes and <span>Rewards</span>
               </h2>
@@ -674,7 +674,7 @@ export default function Home() {
                 participants.
               </p>
             </div>
-            <div className="flex flex-col items-center lg:flex-row pt-10 lg:pt-[34px] lg:gap-[37px]">
+            <div className="flex relative z-[30] flex-col items-center lg:flex-row pt-10 lg:pt-[34px] lg:gap-[37px]">
               <div className="left max-w-[321px] lg:max-w-none">
                 <Image src={Img5} alt="" />
               </div>
@@ -757,6 +757,18 @@ export default function Home() {
       </div>
       <div className="absolute mix-blend-hard-light hidden lg:block top-[2642px] right-0 -z-50">
         <Image src={vector16} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light hidden lg:block top-[5900px] right-0 ">
+        <Image src={vector16} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light hidden lg:block max-w-[1037px] top-[5770px] left-0">
+        <Image src={vector13} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light block lg:hidden top-[5935px] right-0 ">
+        <Image src={vector14} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light block lg:hidden top-[5491px] left-[-14px]">
+        <Image src={vector15} alt="Purple Blur" />
       </div>
     </>
   );
