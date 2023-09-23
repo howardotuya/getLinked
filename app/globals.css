@@ -718,8 +718,18 @@ body {
   background: rgba(255, 255, 255, 0.01);
 }
 
-@media only screen and (min-width: 1024px) {
+.footRight p,
+.footRight span {
+  font-size: 12px;
+}
 
+.fR-left {
+  display: grid;
+  gap: 12px;
+  padding-top: 6px;
+}
+
+@media only screen and (min-width: 1024px) {
   .ab {
     gap: 28px;
   }
@@ -735,14 +745,14 @@ body {
     width: 100%;
     max-width: 257px;
   }
-  
+
   .hline {
     width: 4px;
     flex-shrink: 0;
     background-color: #d434fe;
     height: 112.476px;
   }
-  
+
   .right-awards h4 {
     font-size: 36px;
     font-style: normal;
