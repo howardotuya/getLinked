@@ -41,8 +41,20 @@ import pas5 from "@/public/images/pas5.png";
 import pas6 from "@/public/images/pas6.png";
 import Img6x from "@/public/images/Img6.png";
 import vector1z from "@/public/images/vector1z.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      duration: 1200,
+      once: false,
+    });
+  }, []);
+
   useEffect(() => {
     document.getElementById("mobile-sidebar").style.display = "none";
   }, []);
@@ -120,10 +132,10 @@ export default function Home() {
                   Hackathon <span>1.0</span>
                   <div className="z-50 xdis">
                     <div className="z-50 inline-flex justify-center items-center w-8 h-auto">
-                      <Image className="w-full h-auto" src={chain} alt="" />
+                      <Image className="w-full h-auto" src={chain} alt="chain" />
                     </div>
                     <div className="z-50 inline-flex justify-center items-center w-[22px] h-auto">
-                      <Image className="w-full h-auto" src={spark} alt="" />
+                      <Image className="w-full h-auto" src={spark} alt="spark" />
                     </div>
                   </div>
                 </h1>
@@ -166,24 +178,24 @@ export default function Home() {
           {/* SVG's in the header or above the fold */}
           <div>
             <div className="z-50 top-[89px] right-[99px] lg:right-auto lg:top-[152px] lg:left-[644px] absolute inline-flex justify-center items-center w-[18px] h-[26px] lg:w-[53px] lg:h-auto">
-              <Image className="w-full h-auto" src={bulb} alt="" />
+              <Image className="w-full h-auto" src={bulb} alt="bulb" />
             </div>
             <div className="z-50 absolute hidden lg:inline-flex top-[299px] lg:left-[706px]">
               <div className="z-50 inline-flex justify-center items-center w-[88px] h-auto">
-                <Image className="w-full h-auto" src={chain} alt="" />
+                <Image className="w-full h-auto" src={chain} alt="chain" />
               </div>
               <div className="z-50 inline-flex justify-center items-center w-[58px] h-auto">
-                <Image className="w-full h-auto" src={spark} alt="" />
+                <Image className="w-full h-auto" src={spark} alt="spark" />
               </div>
             </div>
             <div className="z-50 top-[81px] right-[68px] lg:right-auto lg:top-[146px] lg:left-[821px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image className="w-full h-auto" src={star} alt="" />
+              <Image className="w-full h-auto" src={star} alt="star" />
             </div>
             <div className="z-50 top-[81px] left-[120px] lg:top-[68px] lg:left-[185px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image className="w-full h-auto" src={sstar} alt="" />
+              <Image className="w-full h-auto" src={sstar} alt="star" />
             </div>
             <div className="z-50 top-[275px] lg:top-auto right-[91px] lg:right-auto lg:bottom-[146px] lg:left-[571px] absolute inline-flex justify-center items-center w-[6px] h-[8px] lg:w-[26px] lg:h-8">
-              <Image className="w-full h-auto" src={star} alt="" />
+              <Image className="w-full h-auto" src={star} alt="star" />
             </div>
           </div>
         </div>
@@ -212,14 +224,26 @@ export default function Home() {
         <div>
           {/* Big idea Section */}
           <section className="bigIdea">
-            <div className="left max-w-[264px] lg:max-w-[490px] h-auto w-full">
+            <div
+              data-aos="fade-right"
+              data-aos-delay="100"
+              className="left max-w-[264px] lg:max-w-[490px] h-auto w-full"
+            >
               <Image src={Img1} alt="The Big Idea" />
             </div>
             <div className="bigIdea-right">
-              <h2 className="heading2 max-w-[249px] lg:max-w-[399px]">
+              <h2
+                data-aos="fade-down"
+                data-aos-delay="100"
+                className="heading2 max-w-[249px] lg:max-w-[399px]"
+              >
                 Introduction to getlinked <span>tech Hackathon 1.0</span>
               </h2>
-              <p className="pbody w-full max-w-[321px] lg:max-w-[530px]">
+              <p
+                data-aos="fade-down"
+                data-aos-delay="200"
+                className="pbody w-full max-w-[321px] lg:max-w-[530px]"
+              >
                 Our tech hackathon is a melting pot of visionaries, and its
                 purpose is as clear as day: to shape the future. Whether
                 you&apos;re a coding genius, a design maverick, or a concept
@@ -230,13 +254,13 @@ export default function Home() {
               </p>
             </div>
             <div className="absolute top-[112px] lg:top-[223px] left-[57px] lg:left-[206px] lg:max-w-[21px] max-w-[11px]">
-              <Image src={vector5} alt="" />
+              <Image src={vector5} alt="star" />
             </div>
             <div className="absolute top-[366px] lg:top-[216px] right-[44px] lg:right-[161px] max-w-[8px] lg:max-w-[30px]">
-              <Image src={vector6} alt="" />
+              <Image src={vector6} alt="star" />
             </div>
             <div className="absolute top-[296px] lg:top-auto lg:bottom-[61px] left-[181px] lg:left-[715px] max-w-[22px] lg:max-w-[49px]">
-              <Image src={curlyArrow} alt="" />
+              <Image src={curlyArrow} alt="curlyArrow" />
             </div>
           </section>
 
@@ -248,10 +272,18 @@ export default function Home() {
           {/* Rules and Regulations Section */}
           <section className="randg">
             <div className="bigIdea-right">
-              <h2 className="heading2 max-w-[107px] lg:max-w-[170px]">
+              <h2
+                data-aos="fade-down"
+                data-aos-delay="100"
+                className="heading2 max-w-[107px] lg:max-w-[170px]"
+              >
                 Rules and <span>Guidelines</span>
               </h2>
-              <p className="pbody w-full max-w-[321px] lg:max-w-[530px]">
+              <p
+                data-aos="fade-down"
+                data-aos-delay="200"
+                className="pbody w-full max-w-[321px] lg:max-w-[530px]"
+              >
                 Our tech hackathon is a melting pot of visionaries, and its
                 purpose is as clear as day: to shape the future. Whether
                 you&apos;re a coding genius, a design maverick, or a concept
@@ -261,16 +293,20 @@ export default function Home() {
                 that&apos;s what we&apos;re all about!
               </p>
             </div>
-            <div className="max-w-[294px] w-full inline-flex justify-center items-center lg:max-w-[604px]">
+            <div
+              data-aos="fade-left"
+              data-aos-delay="100"
+              className="max-w-[294px] w-full inline-flex justify-center items-center lg:max-w-[604px]"
+            >
               <Image
                 className="hidden lg:block w-full h-auto shrink-0"
                 src={Img2}
-                alt=""
+                alt="Woman sitting"
               />
               <Image
                 className="lg:hidden block w-full h-auto shrink-0"
                 src={Img22}
-                alt=""
+                alt="woman sitting"
               />
             </div>
 
@@ -292,15 +328,23 @@ export default function Home() {
 
           {/* Judging Criteria Key attributes */}
           <section className="jcka">
-            <div className="left">
+            <div data-aos="fade-right" data-aos-delay="100" className="left">
               <Image src={Img3} alt="" />
             </div>
             <div className="right">
               <div>
-                <h2 className="heading2 max-w-[167px] lg:max-w-[267px]">
+                <h2
+                  data-aos="fade-down"
+                  data-aos-delay="100"
+                  className="heading2 max-w-[167px] lg:max-w-[267px]"
+                >
                   Judging Criteria <span>Key attributes</span>
                 </h2>
-                <div className="jcka-p">
+                <div
+                  data-aos="fade-down"
+                  data-aos-delay="200"
+                  className="jcka-p"
+                >
                   <p>
                     <span>Innovation and Creativity:</span> Evaluate the
                     uniqueness and creativity of the solution. Consider whether
@@ -362,7 +406,7 @@ export default function Home() {
 
           {/* FAQs */}
           <section className="faqs">
-            <div className="left">
+            <div data-aos="fade-down" data-aos-delay="200" className="left">
               <div className="faqtt">
                 <h2 className="heading2 max-w-[158px] lg:max-w-[253px]">
                   Frequently Ask <span>Question</span>
@@ -401,7 +445,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="right lg:max-w-[741px]">
+            <div
+              data-aos="fade-left"
+              data-aos-delay="100"
+              className="right lg:max-w-[741px]"
+            >
               <Image src={Img4} alt="" />
             </div>
 
@@ -434,14 +482,18 @@ export default function Home() {
 
           {/* timeline */}
           <section className="timeline">
-            <div className="time-s1">
+            <div data-aos="fade-down" data-aos-delay="100" className="time-s1">
               <h2>Timeline</h2>
               <p>
                 Here is the breakdown of the time we anticipate using for the
                 upcoming event.
               </p>
             </div>
-            <div className="t-cont-cover">
+            <div
+              data-aos="fade-down"
+              data-aos-delay="100"
+              className="t-cont-cover"
+            >
               <div className="t-cont 1">
                 <div className="left">
                   <h4 className="t-h4">Hackathon Announcement</h4>
@@ -548,7 +600,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="t2-cont-cover">
+            <div
+              data-aos="fade-down"
+              data-aos-delay="100"
+              className="t2-cont-cover"
+            >
               <div className="t2-cont">
                 <div className="left">
                   <div>
@@ -675,7 +731,11 @@ export default function Home() {
 
           {/* Prizes and Rewards */}
           <section className="pag flex flex-col lg:px-[106px] pt-[74px] pb-[89px] lg:pb-[149px] bg-[#110B21]">
-            <div className="right-intro z-[30] flex flex-col lg:items-start items-center self-center lg:pr-[164px] lg:self-end">
+            <div
+              data-aos="fade-left"
+              data-aos-delay="100"
+              className="right-intro z-[30] flex flex-col lg:items-start items-center self-center lg:pr-[164px] lg:self-end"
+            >
               <h2 className="heading2 text-center lg:text-left max-w-[109px] lg:max-w-[174px]">
                 Prizes and <span>Rewards</span>
               </h2>
@@ -685,11 +745,15 @@ export default function Home() {
               </p>
             </div>
             <div className="flex relative z-[30] flex-col items-center lg:flex-row pt-10 lg:pt-[34px] lg:gap-[37px]">
-              <div className="left max-w-[321px] lg:max-w-none">
+              <div
+              data-aos="fade-right"
+              data-aos-delay="200" className="left max-w-[321px] lg:max-w-none">
                 <Image src={Img5} alt="" />
               </div>
 
-              <div className="right">
+              <div
+              data-aos="fade-down"
+              data-aos-delay="300" className="right">
                 <div className="right-awards flex justify-center items-center gap-[13px] lg:gap-[26px] pt-[113px] lg:pt-[230px]">
                   <div className="frame1 relative">
                     <h4 className="grid text-center">
@@ -743,7 +807,9 @@ export default function Home() {
 
           {/* Partners and Sponsors */}
           <section className="pas relative pt-[41px] pb-[104px] lg:pt-[114px] lg:pb-[128px] flex flex-col justify-center items-center gap-10 lg:gap-[65px]">
-            <div className="top z-10 flex flex-col justify-center items-center gap-[5px] lg:gap-[22px] text-center leading-[27.5px]">
+            <div
+              data-aos="fade-down"
+              data-aos-delay="100" className="top z-10 flex flex-col justify-center items-center gap-[5px] lg:gap-[22px] text-center leading-[27.5px]">
               <h2 className="clashd font-bold text-[20px] lg:text-[32px]">
                 Partners and Sponsors
               </h2>
@@ -752,7 +818,9 @@ export default function Home() {
                 companies as its partners and sponsors
               </p>
             </div>
-            <div className=" w-full max-w-[540px] lg:max-w-none px-7 lg:px-16 xl:px-[128px]">
+            <div
+              data-aos="fade-down"
+              data-aos-delay="200" className=" w-full max-w-[540px] lg:max-w-none px-7 lg:px-16 xl:px-[128px]">
               <div className="grid bpurp px-12 lg:px-16 xl:px-[178px] py-10 lg:py-[144px]">
                 <div className="flex flex-row gap-2 lg:gap-8 justify-end">
                   <div className="ab">
@@ -853,7 +921,9 @@ export default function Home() {
           {/* Privacy Policy and Terms */}
           <section className="ppat pb-[83px] px-12 lg:px-0 lg:pb-[161px] relative flex flex-col lg:flex-row lg:items-end gap-[144px] lg:gap-[60px] pt-[71px] lg:pt-[169px] lg:pl-[187px]">
             <div className="left">
-              <div className="left1 grid justify-items-center lg:block text-center lg:text-left">
+              <div
+              data-aos="fade-right"
+              data-aos-delay="100" className="left1 grid justify-items-center lg:block text-center lg:text-left">
                 <h2 className="heading2 max-w-[188px] lg:max-w-[300px]">
                   Privacy Policy and <span>Terms</span>
                 </h2>
@@ -865,7 +935,9 @@ export default function Home() {
                   goodies. it’s our aim to always take of our participant
                 </h6>
               </div>
-              <div className="left2 pt-[30px] lg:pt-[69px]">
+              <div
+              data-aos="fade-right"
+              data-aos-delay="200" className="left2 pt-[30px] lg:pt-[69px]">
                 <div className="pt-[45px] lg:pt-[50px] px-3 lg:px-[72px] bpurp inline-block">
                   <p className="max-w-[425px] text-center lg:text-left text-[12px] lg:text-[14px] leading-[216%]">
                     At getlinked tech Hackathon 1.0, we value your privacy and
@@ -935,7 +1007,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="right lg:max-w-[559px] max-w-[262px]">
+            <div 
+              data-aos="fade-left"
+              data-aos-delay="300"
+              className="right lg:max-w-[559px] max-w-[262px]">
               <Image src={Img6x} alt="" />
             </div>
             <div className="absolute -z-50 max-w-[249px] lg:max-w-none bottom-[219px] left-[73px] lg:bottom-auto lg:left-auto lg:top-[93px] lg:right-[123px]">
@@ -968,7 +1043,9 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="setbody relative bg-[#100B20]">
+      <footer
+              data-aos="zoom-in-up"
+              data-aos-delay="100" className="setbody relative bg-[#100B20]">
         <div className="">
           <div className="pb-[41px] pt-[70px] pl-16 pr-14 xl:px-[220px]">
             <div className="flex flex-col lg:flex-row gap-[32px] lg:gap-[191px] w-full">
