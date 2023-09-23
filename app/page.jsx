@@ -387,8 +387,29 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="right max-w-[741px]">
+            <div className="right lg:max-w-[741px]">
               <Image src={Img4} alt="" />
+            </div>
+
+            {/* absolute Images */}
+            <div className="q q-1">?</div>
+            <div className="q q-2">?</div>
+            <div className="q q-3">?</div>
+
+            <div className="absolute bottom-[376px] left-[186px] lg:bottom-auto lg:left-auto lg:top-[121px] right-[57px] lg:right-[471px] lg:max-w-[21px] max-w-[11px]">
+              <Image src={vector5} alt="light purple star" />
+            </div>
+            <div className="absolute bottom-[267px] left-[98px] lg:bottom-auto lg:left-auto lg:top-[253px] lg:right-[672px] lg:max-w-[21px] max-w-[11px]">
+              <Image src={vector5} alt="light purple star" />
+            </div>
+            <div className="absolute top-[47px] lg:top-[110px] left-[59px] lg:left-[183px] max-w-[18px] lg:max-w-[30px]">
+              <Image src={vector6} alt="dark purple star" />
+            </div>
+            <div className="z-50  bottom-[206px] left-[50px] lg:bottom-[398px] lg:left-[720px] absolute inline-flex justify-center items-center w-[10px] h-auto lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={star} alt="grey star" />
+            </div>
+            <div className="z-50 bottom-[44px] right-[92px] lg:bottom-[47px] lg:right-[250px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={sstar} alt="white star" />
             </div>
           </section>
         </div>

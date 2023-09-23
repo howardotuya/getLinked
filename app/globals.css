@@ -74,6 +74,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "madetommy";
+  src: url("/fonts/made_tommy/mo.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
 body {
   background-color: #150e28;
   color: #fff;
@@ -419,6 +427,7 @@ body {
   gap: 86px;
   padding-top: 60px;
   padding-bottom: 49px;
+  position: relative;
 }
 
 .faqtt2 {
@@ -434,8 +443,8 @@ body {
   gap: 24px;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 4.5px;
-  border-bottom: 1px solid #D434FE;;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #d434fe;
 }
 
 .faqtt2 > div > p:nth-of-type(1) {
@@ -460,14 +469,83 @@ body {
 } */
 
 .pbody2 {
-font-size: 12px!important;
+  font-size: 12px !important;
+}
+
+.faqs > div.right {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 327px;
+}
+
+.q {
+  font-family: "madetommy";
+  line-height: 28px;
+  position: absolute;
+  font-size: 40px;
+  font-weight: 500;
+  color: #a866fd;
+}
+
+.q-1 {
+  bottom: 348px;
+  left: 77px;
+}
+
+.q-2 {
+  bottom: 368px;
+  left: 141px;
+  font-size: 64px;
+  color: #d434fe;
+}
+
+.q-3 {
+  bottom: 348px;
+  left: 219px;
 }
 
 @media only screen and (min-width: 1024px) {
+  .faqs > div.right {
+    max-width: 731px;
+  }
+
+  .q {
+    font-family: "madetommy";
+    line-height: 28px;
+    position: absolute;
+    font-size: 96px;
+    font-weight: 500;
+    color: #a866fd;
+  }
+
+  .q-1 {
+    bottom: auto;
+    left: auto;
+    top: 122px;
+    right: 693px;
+  }
+
+  .q-2 {
+    bottom: auto;
+    left: auto;
+    top: 74px;
+    right: 532px;
+    font-size: 128px;
+    color: #d434fe;
+  }
+
+  .q-3 {
+    bottom: auto;
+    left: auto;
+    top: 122px;
+    right: 371px;
+  }
 
   .pbody2 {
-    font-size: 14px!important;
-    }
+    font-size: 14px !important;
+  }
   .faqs {
     display: flex;
     justify-content: center;
@@ -476,8 +554,9 @@ font-size: 12px!important;
     gap: 24px;
     padding-top: 122px;
     padding-bottom: 63px;
+    padding-left: 219px;
   }
-  
+
   .faqtt2 {
     padding-top: 68px;
     display: grid;
@@ -485,16 +564,16 @@ font-size: 12px!important;
     padding-left: unset;
     padding-right: unset;
   }
-  
+
   .faqtt2 > div {
     display: flex;
     gap: 24px;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 13px;
-    border-bottom: 1px solid #D434FE;;
+    border-bottom: 1px solid #d434fe;
   }
-  
+
   .faqtt2 > div > p:nth-of-type(1) {
     color: #fff;
     font-size: 14px;
@@ -502,7 +581,7 @@ font-size: 12px!important;
     font-weight: 400;
     line-height: 27.5px; /* 196.429% */
   }
-  
+
   .faqtt2 > div > p:nth-of-type(2) {
     color: #d434fe;
     font-size: 20px;
@@ -510,7 +589,7 @@ font-size: 12px!important;
     font-weight: 400;
     line-height: 27.5px; /* 137.5% */
   }
-  
+
   .jcka {
     flex-direction: row;
     padding-left: 66px;
