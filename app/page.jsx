@@ -374,7 +374,7 @@ export default function Home() {
                   <p>+</p>
                 </div>
                 <div>
-                  <p>What happens if I don't have an idea for a project?</p>
+                  <p>What happens if I don&apos;t have an idea for a project?</p>
                   <p>+</p>
                 </div>
                 <div>
