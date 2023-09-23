@@ -20,6 +20,7 @@ import Img1 from "@/public/images/Img1.png";
 import Img2 from "@/public/images/Img2.png";
 import Img3 from "@/public/images/Img3.png";
 import Img4 from "@/public/images/Img4.png";
+import Img5 from "@/public/images/Img5.png";
 import Img22 from "@/public/images/Img22.png";
 import vector5 from "@/public/images/vector5.png";
 import vector6 from "@/public/images/vector6.png";
@@ -29,6 +30,9 @@ import vector13 from "@/public/images/vector13.png";
 import vector14 from "@/public/images/vector14.png";
 import vector15 from "@/public/images/vector15.png";
 import vector16 from "@/public/images/vector16.png";
+import Img6 from "@/public/images/1st.png";
+import Img7 from "@/public/images/2nd.png";
+import Img8 from "@/public/images/3rd.png";
 
 export default function Home() {
   useEffect(() => {
@@ -409,6 +413,320 @@ export default function Home() {
               <Image className="w-full h-auto" src={star} alt="grey star" />
             </div>
             <div className="z-50 bottom-[44px] right-[92px] lg:bottom-[47px] lg:right-[250px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={sstar} alt="white star" />
+            </div>
+          </section>
+
+          {/* divider */}
+          <span className="block w-full">
+            <span className="block divider"></span>
+          </span>
+
+          {/* timeline */}
+          <section className="timeline">
+            <div className="time-s1">
+              <h2>Timeline</h2>
+              <p>
+                Here is the breakdown of the time we anticipate using for the
+                upcoming event.
+              </p>
+            </div>
+            <div className="t-cont-cover">
+              <div className="t-cont 1">
+                <div className="left">
+                  <h4 className="t-h4">Hackathon Announcement</h4>
+                  <p className="xl:max-w-[436px]">
+                    The getlinked tech hackathon 1.0 is formally announced to
+                    the general public and teams begin to get ready to register
+                  </p>
+                </div>
+                <div className="t-numb">
+                  1
+                  <div className="absolute w-1 h-[137px] bottom-[64px] bg-[#a866fd]"></div>
+                </div>
+                <div className="right justify-self-start">
+                  <h4 className="t-h4">November 18, 2023</h4>
+                </div>
+              </div>
+
+              <div className="t-cont 2">
+                <div className="left">
+                  <h4 className="t-h4">November 18, 2023</h4>
+                </div>
+                <div className="t-numb">
+                  2
+                  <div className="absolute w-1 h-[86px] bottom-[64px] bg-[#a866fd]"></div>
+                </div>
+                <div className="right justify-self-start">
+                  <h4 className="t-h4">Teams Registration begins</h4>
+                  <p className="xl:max-w-[436px]">
+                    Interested teams can now show their interest in the
+                    getlinked tech hackathon 1.0 2023 by proceeding to register
+                  </p>
+                </div>
+              </div>
+
+              <div className="t-cont 3">
+                <div className="left">
+                  <h4 className="t-h4">Teams Registration ends</h4>
+                  <p className="xl:max-w-[389px]">
+                    Interested Participants are no longer Allowed to register
+                  </p>
+                </div>
+                <div className="t-numb">
+                  3
+                  <div className="absolute w-1 h-[86px] bottom-[64px] bg-[#a866fd]"></div>
+                </div>
+                <div className="right justify-self-start">
+                  <h4 className="t-h4">HNovember 18, 2023</h4>
+                </div>
+              </div>
+
+              <div className="t-cont 4">
+                <div className="left">
+                  <h4 className="t-h4">November 18, 2023</h4>
+                </div>
+                <div className="t-numb">
+                  4
+                  <div className="absolute w-1 h-[86px] bottom-[64px] bg-[#a866fd]"></div>
+                </div>
+                <div className="right justify-self-start">
+                  <h4 className="t-h4">
+                    Announcement of the accepted teams and ideas
+                  </h4>
+                  <p className="xl:max-w-[485px]">
+                    All teams whom idea has been accepted into getlinked tech
+                    hackathon 1.0 2023 are formally announced
+                  </p>
+                </div>
+              </div>
+
+              <div className="t-cont 5">
+                <div className="left">
+                  <h4 className="t-h4">
+                    Getlinked Hackathon 1.0 Offically Begins
+                  </h4>
+                  <p className="xl:max-w-[386px]">
+                    All teams whom idea has been accepted into getlinked tech
+                    hackathon 1.0 2023 are formally announced
+                  </p>
+                </div>
+                <div className="t-numb">
+                  5
+                  <div className="absolute w-1 h-[86px] bottom-[64px] bg-[#a866fd]"></div>
+                </div>
+                <div className="right justify-self-start">
+                  <h4 className="t-h4">HNovember 18, 2023</h4>
+                </div>
+              </div>
+
+              <div className="t-cont 6">
+                <div className="left">
+                  <h4 className="t-h4">November 18, 2023</h4>
+                </div>
+                <div className="t-numb">
+                  6
+                  <div className="absolute w-1 h-[86px] bottom-[64px] bg-[#a866fd]"></div>
+                </div>
+                <div className="right justify-self-start">
+                  <h4 className="t-h4">Demo Day</h4>
+                  <p className="xl:max-w-[481px]">
+                    Teams get the opportunity to pitch their projects to judges.
+                    The winner of the hackathon will also be announced on this
+                    day
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="t2-cont-cover">
+              <div className="t2-cont">
+                <div className="left">
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>1</div>
+                </div>
+                <div className="right">
+                  <div>
+                    <h5>Hackathon Announcement</h5>
+                    <p>
+                      The getlinked tech hackathon 1.0 is formally announced to
+                      the general public and teams begin to get ready to
+                      register
+                    </p>
+                  </div>
+                  <h5>November 18, 2023</h5>
+                </div>
+              </div>
+              <div className="t2-cont">
+                <div className="left">
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>2</div>
+                </div>
+                <div className="right">
+                  <div>
+                    <h5>Teams Registration begins</h5>
+                    <p>
+                      Interested teams can now show their interest in the
+                      getlinked tech hackathon 1.0 2023 by proceeding to
+                      register
+                    </p>
+                  </div>
+                  <h5>November 18, 2023</h5>
+                </div>
+              </div>
+              <div className="t2-cont">
+                <div className="left">
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>3</div>
+                </div>
+                <div className="right">
+                  <div>
+                    <h5>Teams Registration ends</h5>
+                    <p>
+                      Interested Participants are no longer Allowed to register
+                    </p>
+                  </div>
+                  <h5>November 18, 2023</h5>
+                </div>
+              </div>
+              <div className="t2-cont">
+                <div className="left">
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>4</div>
+                </div>
+                <div className="right">
+                  <div>
+                    <h5>Announcement of the accepted teams and ideas</h5>
+                    <p>
+                      All teams whom idea has been accepted into getlinked tech
+                      hackathon 1.0 2023 are formally announced
+                    </p>
+                  </div>
+                  <h5>November 18, 2023</h5>
+                </div>
+              </div>
+              <div className="t2-cont">
+                <div className="left">
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>5</div>
+                </div>
+                <div className="right">
+                  <div>
+                    <h5>Getlinked Hackathon 1.0 Offically Begins</h5>
+                    <p>
+                      Accepted teams can now proceed to build their ground
+                      breaking skill driven solutions
+                    </p>
+                  </div>
+                  <h5>November 18, 2023</h5>
+                </div>
+              </div>
+              <div className="t2-cont">
+                <div className="left">
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>6</div>
+                </div>
+                <div className="right">
+                  <div>
+                    <h5>Demo Day</h5>
+                    <p>
+                      Teams get the opportunity to pitch their projects to
+                      judges. The winner of the hackathon will also be announced
+                      on this day
+                    </p>
+                  </div>
+                  <h5>November 18, 2023</h5>
+                </div>
+              </div>
+            </div>
+
+            {/* Absolute Images */}
+            <div className="absolute top-[182px] left-[88px] lg:top-[266px] lg:left-[338px] lg:max-w-[21px] max-w-[11px]">
+              <Image src={vector5} alt="light purple star" />
+            </div>
+            <div className="z-50  bottom-[37px] left-[22px] lg:bottom-[183px] lg:left-[177px] absolute inline-flex justify-center items-center w-[10px] h-auto lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={star} alt="grey star" />
+            </div>
+            <div className="z-50 top-[528px] right-[95px] lg:top-[734px] lg:right-[266px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={sstar} alt="white star" />
+            </div>
+          </section>
+
+          {/* Prizes and Rewards */}
+          <section className="pag flex flex-col lg:px-[106px] pt-[74px] pb-[89px] lg:pb-[149px] bg-[#110B21]">
+            <div className="right-intro flex flex-col lg:items-start items-center self-center lg:pr-[164px] lg:self-end">
+              <h2 className="heading2 text-center lg:text-left max-w-[109px] lg:max-w-[174px]">
+                Prizes and <span>Rewards</span>
+              </h2>
+              <p className="pbody2 text-center lg:text-left pt-1 lg:pt-4 max-w-[277px] lg:max-w-[401px]">
+                Highlight of the prizes or rewards for winners and for
+                participants.
+              </p>
+            </div>
+            <div className="flex flex-col items-center lg:flex-row pt-10 lg:pt-[34px] lg:gap-[37px]">
+              <div className="left max-w-[321px] lg:max-w-none">
+                <Image src={Img5} alt="" />
+              </div>
+
+              <div className="right">
+                <div className="right-awards flex justify-center items-center gap-[13px] lg:gap-[26px] pt-[113px] lg:pt-[230px]">
+                  <div className="frame1 relative">
+                    <h4 className="grid text-center">
+                      2nd<span>Runner</span>
+                    </h4>
+                    <h2 class="award-h2">N300,000</h2>
+                    <div className="absolute cd inline-flex justify-center items-center w-[75px] lg:w-[179px] bottom-[100px] lg:bottom-[200px]">
+                      <Image className="w-full h-auto" src={Img7} alt="" />
+                    </div>
+                  </div>
+                  <div className="frame12 relative">
+                    <h4 className="grid text-center">
+                      1st<span>Runner</span>
+                    </h4>
+                    <h2 class="award-h22">N400,000</h2>
+
+                    <div className="absolute cd inline-flex justify-center items-center w-[125px] lg:w-[296px] bottom-[100px] lg:bottom-[198px]">
+                      <Image className="w-full h-auto" src={Img6} alt="" />
+                    </div>
+                  </div>
+                  <div className="frame1 relative">
+                    <h4 className="grid text-center">
+                      3rd<span>Runner</span>
+                    </h4>
+                    <h2 class="award-h2">N150,000</h2>
+                    <div className="absolute cd inline-flex justify-center items-center w-[75px] lg:w-[179px] bottom-[100px] lg:bottom-[189px]">
+                      <Image className="w-full h-auto" src={Img8} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Absolute Assets */}
+            <div className="absolute top-[49px] left-[63px] lg:top-[79px] lg:left-[316px] lg:max-w-[21px] max-w-[11px]">
+              <Image src={vector5} alt="light purple star" />
+            </div>
+            <div className="z-50  bottom-[31px] right-[137px] lg:bottom-[107px] lg:right-[343px] absolute inline-flex justify-center items-center w-[10px] h-auto lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={star} alt="grey star" />
+            </div>
+            <div className="z-50 top-[495px] left-[68px] lg:left-auto lg:top-[275px] lg:right-[748px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={sstar} alt="white star" />
+            </div>
+            <div className="z-50 top-[562px] right-[61px] lg:top-[407px] lg:right-[112px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={sstar} alt="white star" />
+            </div>
+            <div className="z-50 bottom-[528px] left-[95px] lg:bottom-[148px] lg:left-[538px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
               <Image className="w-full h-auto" src={sstar} alt="white star" />
             </div>
           </section>
