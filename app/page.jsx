@@ -33,6 +33,12 @@ import vector16 from "@/public/images/vector16.png";
 import Img6 from "@/public/images/1st.png";
 import Img7 from "@/public/images/2nd.png";
 import Img8 from "@/public/images/3rd.png";
+import pas1 from "@/public/images/pas1.png";
+import pas2 from "@/public/images/pas2.png";
+import pas3 from "@/public/images/pas3.png";
+import pas4 from "@/public/images/pas4.png";
+import pas5 from "@/public/images/pas5.png";
+import pas6 from "@/public/images/pas6.png";
 
 export default function Home() {
   useEffect(() => {
@@ -374,7 +380,9 @@ export default function Home() {
                   <p>+</p>
                 </div>
                 <div>
-                  <p>What happens if I don&apos;t have an idea for a project?</p>
+                  <p>
+                    What happens if I don&apos;t have an idea for a project?
+                  </p>
                   <p>+</p>
                 </div>
                 <div>
@@ -730,6 +738,116 @@ export default function Home() {
               <Image className="w-full h-auto" src={sstar} alt="white star" />
             </div>
           </section>
+
+          {/* Partners and Sponsors */}
+          <section className="pas relative pt-[41px] pb-[104px] lg:pt-[114px] lg:pb-[128px] flex flex-col justify-center items-center gap-10 lg:gap-[65px]">
+            <div className="top z-10 flex flex-col justify-center items-center gap-[5px] lg:gap-[22px] text-center leading-[27.5px]">
+              <h2 className="clashd font-bold text-[20px] lg:text-[32px]">
+                Partners and Sponsors
+              </h2>
+              <p className="text-[12px] lg:text-[14px] max-w-[286px] lg:max-w-[452px] leading-[20.5px] lg:leading-[27.5px]">
+                Getlinked Hackathon 1.0 is honored to have the following major
+                companies as its partners and sponsors
+              </p>
+            </div>
+            <div className=" w-full max-w-[540px] lg:max-w-none px-7 lg:px-16 xl:px-[128px]">
+              <div className="grid bpurp px-12 lg:px-16 xl:px-[178px] py-10 lg:py-[144px]">
+                <div className="flex flex-row gap-2 lg:gap-8 justify-end">
+                  <div className="ab">
+                    <div class="w-full h-full inline-flex justify-center items-center">
+                      <Image
+                        className="w-[31px] lg:w-[120px]"
+                        src={pas1}
+                        alt=""
+                      />
+                    </div>
+                    <div className="line"></div>
+                  </div>
+
+                  <div className="hline"></div>
+
+                  <div className="ab">
+                    <div class="w-full h-full inline-flex justify-center items-center">
+                      <Image
+                        className="w-[56px] lg:w-[213px]"
+                        src={pas2}
+                        alt=""
+                      />
+                    </div>
+                    <div className="line"></div>
+                  </div>
+
+                  <div className="hline"></div>
+
+                  <div className="ab">
+                    <div class="w-full h-full inline-flex justify-center items-center">
+                      <Image
+                        className="w-[34px] lg:w-[131px]"
+                        src={pas3}
+                        alt=""
+                      />
+                    </div>
+                    <div className="line"></div>
+                  </div>
+                </div>
+                <div className="flex flex-row gap-2 lg:gap-8 justify-end pt-2 lg:pt-5">
+                  <div className="ab">
+                    <div class="w-full h-full inline-flex justify-center items-center">
+                      <Image
+                        className="w-[39px] lg:w-[147px]"
+                        src={pas4}
+                        alt=""
+                      />
+                    </div>
+                    <div className="linex"></div>
+                  </div>
+
+                  <div className="hline"></div>
+
+                  <div className="ab">
+                    <div class="w-full h-full inline-flex justify-center items-center">
+                      <Image
+                        className="w-[54px] lg:w-[204px]"
+                        src={pas6}
+                        alt=""
+                      />
+                    </div>
+                    <div className="linex"></div>
+                  </div>
+
+                  <div className="hline"></div>
+
+                  <div className="ab">
+                    <div class="w-full h-full inline-flex justify-center items-center">
+                      <Image
+                        className="w-[69px] lg:w-[231px]"
+                        src={pas5}
+                        alt=""
+                      />
+                    </div>
+                    <div className="linex"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Absolute Assets */}
+            <div className="absolute top-[178px] left-[52px] lg:top-[241px] lg:left-[207px] lg:max-w-[30px] max-w-[11px]">
+              <Image src={vector5} alt="light purple star" />
+            </div>
+            <div className="absolute hidden lg:block top-[241px] left-[63px] lg:top-[384px] lg:left-[648px] lg:max-w-[21px] max-w-[11px]">
+              <Image src={vector5} alt="light purple star" />
+            </div>
+            <div className="z-50 bottom-[71px] right-[102px] lg:bottom-[204px] lg:right-[648px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
+              <Image className="w-full h-auto" src={sstar} alt="white star" />
+            </div>
+          </section>
+
+          {/* divider */}
+          <span className="block w-full">
+            <span className="block divider"></span>
+          </span>
+
         </div>
       </main>
 
@@ -769,6 +887,15 @@ export default function Home() {
       </div>
       <div className="absolute mix-blend-hard-light block lg:hidden top-[5491px] left-[-14px]">
         <Image src={vector15} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light hidden lg:block max-w-[1037px] top-[6533px] left-[-231px] -z-50">
+        <Image src={vector13} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light hidden lg:block top-[7002px] right-0 ">
+        <Image src={vector16} alt="Purple Blur" />
+      </div>
+      <div className="absolute mix-blend-hard-light block lg:hidden top-[6555px] right-0 ">
+        <Image src={vector14} alt="Purple Blur" />
       </div>
     </>
   );

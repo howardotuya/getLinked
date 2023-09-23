@@ -672,7 +672,77 @@ body {
   position: relative;
 }
 
+.clashd {
+  font-family: "ClashDisplay";
+}
+
+.line {
+  background-color: #d434fe;
+  height: 2px;
+  width: 100%;
+  max-width: 257px;
+}
+.linex {
+  background-color: transparent;
+  height: 2px;
+  width: 100%;
+  max-width: 257px;
+}
+
+.hline {
+  width: 2px;
+  flex-shrink: 0;
+  background-color: #d434fe;
+  height: 30px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.ab {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 257px;
+}
+
+.bpurp {
+  border-radius: 5px;
+  border: 1px solid #d434fe;
+  background: rgba(255, 255, 255, 0.01);
+}
+
 @media only screen and (min-width: 1024px) {
+
+  .ab {
+    gap: 28px;
+  }
+  .line {
+    background-color: #d434fe;
+    height: 4px;
+    width: 100%;
+    max-width: 257px;
+  }
+  .linex {
+    background-color: transparent;
+    height: 4px;
+    width: 100%;
+    max-width: 257px;
+  }
+  
+  .hline {
+    width: 4px;
+    flex-shrink: 0;
+    background-color: #d434fe;
+    height: 112.476px;
+  }
+  
   .right-awards h4 {
     font-size: 36px;
     font-style: normal;
