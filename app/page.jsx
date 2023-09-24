@@ -118,7 +118,9 @@ export default function Home() {
 
         <div className="header-body relative">
           <div className="hb-d1 z-50 relative">
-            <h5>Igniting a Revolution in HR Innovation</h5>
+            <div className="typewritter">
+              <h5>Igniting a Revolution in HR Innovation</h5>
+            </div>
             <div>
               <Image quality={100} src={vector3} alt="under-T" />
             </div>
@@ -132,10 +134,20 @@ export default function Home() {
                   Hackathon <span>1.0</span>
                   <div className="z-50 xdis">
                     <div className="z-50 inline-flex justify-center items-center w-8 h-auto">
-                      <Image quality={100} className="w-full h-auto" src={chain} alt="chain" />
+                      <Image
+                        quality={100}
+                        className="w-full h-auto"
+                        src={chain}
+                        alt="chain"
+                      />
                     </div>
                     <div className="z-50 inline-flex justify-center items-center w-[22px] h-auto">
-                      <Image quality={100} className="w-full h-auto" src={spark} alt="spark" />
+                      <Image
+                        quality={100}
+                        className="w-full h-auto"
+                        src={spark}
+                        alt="spark"
+                      />
                     </div>
                   </div>
                 </h1>
@@ -178,24 +190,54 @@ export default function Home() {
           {/* SVG's in the header or above the fold */}
           <div>
             <div className="z-50 top-[89px] right-[99px] lg:right-auto lg:top-[152px] lg:left-[644px] absolute inline-flex justify-center items-center w-[18px] h-[26px] lg:w-[53px] lg:h-auto">
-              <Image quality={100} className="w-full h-auto" src={bulb} alt="bulb" />
+              <Image
+                quality={100}
+                className="w-full h-auto"
+                src={bulb}
+                alt="bulb"
+              />
             </div>
             <div className="z-50 absolute hidden lg:inline-flex top-[299px] lg:left-[706px]">
               <div className="z-50 inline-flex justify-center items-center w-[88px] h-auto">
-                <Image quality={100} className="w-full h-auto" src={chain} alt="chain" />
+                <Image
+                  quality={100}
+                  className="w-full h-auto"
+                  src={chain}
+                  alt="chain"
+                />
               </div>
               <div className="z-50 inline-flex justify-center items-center w-[58px] h-auto">
-                <Image quality={100} className="w-full h-auto" src={spark} alt="spark" />
+                <Image
+                  quality={100}
+                  className="w-full h-auto"
+                  src={spark}
+                  alt="spark"
+                />
               </div>
             </div>
             <div className="z-50 top-[81px] right-[68px] lg:right-auto lg:top-[146px] lg:left-[821px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="w-full h-auto blink" src={star} alt="star" />
+              <Image
+                quality={100}
+                className="w-full h-auto blink"
+                src={star}
+                alt="star"
+              />
             </div>
             <div className="z-50 top-[81px] left-[120px] lg:top-[68px] lg:left-[185px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="w-full h-auto blink delay" src={sstar} alt="star" />
+              <Image
+                quality={100}
+                className="w-full h-auto blink delay"
+                src={sstar}
+                alt="star"
+              />
             </div>
             <div className="z-50 top-[275px] lg:top-auto right-[91px] lg:right-auto lg:bottom-[146px] lg:left-[571px] absolute inline-flex justify-center items-center w-[6px] h-[8px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="w-full h-auto blink" src={star} alt="star" />
+              <Image
+                quality={100}
+                className="w-full h-auto blink"
+                src={star}
+                alt="star"
+              />
             </div>
           </div>
         </div>
@@ -257,7 +299,12 @@ export default function Home() {
               <Image quality={100} className="blink" src={vector5} alt="star" />
             </div>
             <div className="absolute top-[366px] lg:top-[216px] right-[44px] lg:right-[161px] max-w-[8px] lg:max-w-[30px]">
-              <Image quality={100} className="blink delay" src={vector6} alt="star" />
+              <Image
+                quality={100}
+                className="blink delay"
+                src={vector6}
+                alt="star"
+              />
             </div>
             <div className="absolute top-[296px] lg:top-auto lg:bottom-[61px] left-[181px] lg:left-[715px] max-w-[22px] lg:max-w-[49px]">
               <Image quality={100} src={curlyArrow} alt="curlyArrow" />
@@ -298,12 +345,14 @@ export default function Home() {
               data-aos-delay="100"
               className="max-w-[294px] w-full inline-flex justify-center items-center lg:max-w-[604px]"
             >
-              <Image quality={100}
+              <Image
+                quality={100}
                 className="hidden lg:block w-full h-auto shrink-0"
                 src={Img2}
                 alt="Woman sitting"
               />
-              <Image quality={100}
+              <Image
+                quality={100}
                 className="lg:hidden block w-full h-auto shrink-0"
                 src={Img22}
                 alt="woman sitting"
@@ -311,13 +360,28 @@ export default function Home() {
             </div>
 
             <div className="z-50 top-[442px] right-[42px] lg:right-auto lg:top-[116px] lg:left-[439px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="w-full h-auto blink" src={star} alt="star" />
+              <Image
+                quality={100}
+                className="w-full h-auto blink"
+                src={star}
+                alt="star"
+              />
             </div>
             <div className="z-50 top-[185px] left-[43px] lg:top-auto lg:bottom-[167px] lg:left-[741px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="w-full h-auto delay blink" src={sstar} alt="star" />
+              <Image
+                quality={100}
+                className="w-full h-auto delay blink"
+                src={sstar}
+                alt="star"
+              />
             </div>
             <div className="z-50 bottom-[19px] left-[108px] absolute inline-flex lg:hidden justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="w-full h-auto blink" src={sstar} alt="star" />
+              <Image
+                quality={100}
+                className="w-full h-auto blink"
+                src={sstar}
+                alt="star"
+              />
             </div>
           </section>
 
@@ -389,13 +453,28 @@ export default function Home() {
               </div>
             </div>
             <div className="absolute left-[173px] top-[15px] lg:top-[92px] lg:left-[215px] max-w-[13px] lg:max-w-[30px]">
-              <Image quality={100} className="blink delay" src={vector6} alt="star" />
+              <Image
+                quality={100}
+                className="blink delay"
+                src={vector6}
+                alt="star"
+              />
             </div>
             <div className="z-50 top-[221px] left-[212px] lg:top-[470px] lg:left-[421px] absolute inline-flex justify-center items-center w-[12px] h-[14px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="w-full h-auto blink" src={star} alt="star" />
+              <Image
+                quality={100}
+                className="w-full h-auto blink"
+                src={star}
+                alt="star"
+              />
             </div>
             <div className="z-50 bottom-[76px] right-[50px] lg:bottom-[171px] lg:right-0 lg:left-[733px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="w-full h-auto blink delay" src={sstar} alt="star" />
+              <Image
+                quality={100}
+                className="w-full h-auto blink delay"
+                src={sstar}
+                alt="star"
+              />
             </div>
           </section>
 
@@ -459,19 +538,45 @@ export default function Home() {
             <div className="q q-3">?</div>
 
             <div className="absolute bottom-[376px] left-[186px] lg:bottom-auto lg:left-auto lg:top-[121px] right-[57px] lg:right-[471px] lg:max-w-[21px] max-w-[11px]">
-              <Image quality={100} className="blink" src={vector5} alt="light purple star" />
+              <Image
+                quality={100}
+                className="blink"
+                src={vector5}
+                alt="light purple star"
+              />
             </div>
             <div className="absolute bottom-[267px] left-[98px] lg:bottom-auto lg:left-auto lg:top-[253px] lg:right-[672px] lg:max-w-[21px] max-w-[11px]">
-              <Image quality={100} className="delay blink" src={vector5} alt="light purple star" />
+              <Image
+                quality={100}
+                className="delay blink"
+                src={vector5}
+                alt="light purple star"
+              />
             </div>
             <div className="absolute top-[47px] lg:top-[110px] left-[59px] lg:left-[183px] max-w-[18px] lg:max-w-[30px]">
-              <Image quality={100} className="blink"e src={vector6} alt="dark purple star" />
+              <Image
+                quality={100}
+                className="blink"
+                e
+                src={vector6}
+                alt="dark purple star"
+              />
             </div>
             <div className="z-50  bottom-[206px] left-[50px] lg:bottom-[398px] lg:left-[720px] absolute inline-flex justify-center items-center w-[10px] h-auto lg:w-[26px] lg:h-8">
-              <Image quality={100} className="w-full h-auto delay blink" src={star} alt="grey star" />
+              <Image
+                quality={100}
+                className="w-full h-auto delay blink"
+                src={star}
+                alt="grey star"
+              />
             </div>
             <div className="z-50 bottom-[44px] right-[92px] lg:bottom-[47px] lg:right-[250px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="w-full h-auto blink" src={sstar} alt="white star" />
+              <Image
+                quality={100}
+                className="w-full h-auto blink"
+                src={sstar}
+                alt="white star"
+              />
             </div>
           </section>
 
@@ -719,13 +824,28 @@ export default function Home() {
 
             {/* Absolute Images */}
             <div className="absolute top-[182px] left-[88px] lg:top-[266px] lg:left-[338px] lg:max-w-[21px] max-w-[11px]">
-              <Image quality={100} className="blink" src={vector5} alt="light purple star" />
+              <Image
+                quality={100}
+                className="blink"
+                src={vector5}
+                alt="light purple star"
+              />
             </div>
             <div className="z-50  bottom-[37px] left-[22px] lg:bottom-[183px] lg:left-[177px] absolute inline-flex justify-center items-center w-[10px] h-auto lg:w-[26px] lg:h-8">
-              <Image quality={100} className="delay blink w-full h-auto" src={star} alt="grey star" />
+              <Image
+                quality={100}
+                className="delay blink w-full h-auto"
+                src={star}
+                alt="grey star"
+              />
             </div>
             <div className="z-50 top-[528px] right-[95px] lg:top-[734px] lg:right-[266px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="blink w-full h-auto" src={sstar} alt="white star" />
+              <Image
+                quality={100}
+                className="blink w-full h-auto"
+                src={sstar}
+                alt="white star"
+              />
             </div>
           </section>
 
@@ -746,14 +866,14 @@ export default function Home() {
             </div>
             <div className="flex relative z-[30] flex-col items-center lg:flex-row pt-10 lg:pt-[34px] lg:gap-[37px]">
               <div
-              data-aos="fade-right"
-              data-aos-delay="200" className="left max-w-[321px] lg:max-w-none">
+                data-aos="fade-right"
+                data-aos-delay="200"
+                className="left max-w-[321px] lg:max-w-none"
+              >
                 <Image quality={100} src={Img5} alt="Prizes and Rewards" />
               </div>
 
-              <div
-              data-aos="fade-down"
-              data-aos-delay="300" className="right">
+              <div data-aos="fade-down" data-aos-delay="300" className="right">
                 <div className="right-awards flex justify-center items-center gap-[13px] lg:gap-[26px] pt-[113px] lg:pt-[230px]">
                   <div className="frame1 relative">
                     <h4 className="grid text-center">
@@ -761,7 +881,12 @@ export default function Home() {
                     </h4>
                     <h2 class="award-h2">N300,000</h2>
                     <div className="absolute cd inline-flex justify-center items-center w-[75px] lg:w-[179px] bottom-[100px] lg:bottom-[200px]">
-                      <Image quality={100} className="w-full h-auto" src={Img7} alt="2nd Place Medal" />
+                      <Image
+                        quality={100}
+                        className="w-full h-auto"
+                        src={Img7}
+                        alt="2nd Place Medal"
+                      />
                     </div>
                   </div>
                   <div className="frame12 relative">
@@ -771,7 +896,12 @@ export default function Home() {
                     <h2 class="award-h22">N400,000</h2>
 
                     <div className="absolute cd inline-flex justify-center items-center w-[125px] lg:w-[296px] bottom-[100px] lg:bottom-[198px]">
-                      <Image quality={100} className="w-full h-auto" src={Img6} alt="Medal for 1st" />
+                      <Image
+                        quality={100}
+                        className="w-full h-auto"
+                        src={Img6}
+                        alt="Medal for 1st"
+                      />
                     </div>
                   </div>
                   <div className="frame1 relative">
@@ -780,7 +910,12 @@ export default function Home() {
                     </h4>
                     <h2 class="award-h2">N150,000</h2>
                     <div className="absolute cd inline-flex justify-center items-center w-[75px] lg:w-[179px] bottom-[100px] lg:bottom-[189px]">
-                      <Image quality={100} className="w-full h-auto" src={Img8} alt="Medal for 3rd place" />
+                      <Image
+                        quality={100}
+                        className="w-full h-auto"
+                        src={Img8}
+                        alt="Medal for 3rd place"
+                      />
                     </div>
                   </div>
                 </div>
@@ -789,19 +924,44 @@ export default function Home() {
 
             {/* Absolute Assets */}
             <div className="absolute top-[49px] left-[63px] lg:top-[79px] lg:left-[316px] lg:max-w-[21px] max-w-[11px]">
-              <Image quality={100} className="blink delay " src={vector5} alt="light purple star" />
+              <Image
+                quality={100}
+                className="blink delay "
+                src={vector5}
+                alt="light purple star"
+              />
             </div>
             <div className="z-50  bottom-[31px] right-[137px] lg:bottom-[107px] lg:right-[343px] absolute inline-flex justify-center items-center w-[10px] h-auto lg:w-[26px] lg:h-8">
-              <Image quality={100} className="blink w-full h-auto" src={star} alt="grey star" />
+              <Image
+                quality={100}
+                className="blink w-full h-auto"
+                src={star}
+                alt="grey star"
+              />
             </div>
             <div className="z-50 top-[495px] left-[68px] lg:left-auto lg:top-[275px] lg:right-[748px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="blink delay w-full h-auto" src={sstar} alt="white star" />
+              <Image
+                quality={100}
+                className="blink delay w-full h-auto"
+                src={sstar}
+                alt="white star"
+              />
             </div>
             <div className="z-50 top-[562px] right-[61px] lg:top-[407px] lg:right-[112px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="blink w-full h-auto" src={sstar} alt="white star" />
+              <Image
+                quality={100}
+                className="blink w-full h-auto"
+                src={sstar}
+                alt="white star"
+              />
             </div>
             <div className="z-50 bottom-[528px] left-[95px] lg:bottom-[148px] lg:left-[538px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="blink delay w-full h-auto" src={sstar} alt="white star" />
+              <Image
+                quality={100}
+                className="blink delay w-full h-auto"
+                src={sstar}
+                alt="white star"
+              />
             </div>
           </section>
 
@@ -809,7 +969,9 @@ export default function Home() {
           <section className="pas relative pt-[41px] pb-[104px] lg:pt-[114px] lg:pb-[128px] flex flex-col justify-center items-center gap-10 lg:gap-[65px]">
             <div
               data-aos="fade-down"
-              data-aos-delay="100" className="top z-10 flex flex-col justify-center items-center gap-[5px] lg:gap-[22px] text-center leading-[27.5px]">
+              data-aos-delay="100"
+              className="top z-10 flex flex-col justify-center items-center gap-[5px] lg:gap-[22px] text-center leading-[27.5px]"
+            >
               <h2 className="clashd font-bold text-[20px] lg:text-[32px]">
                 Partners and Sponsors
               </h2>
@@ -820,12 +982,15 @@ export default function Home() {
             </div>
             <div
               data-aos="fade-down"
-              data-aos-delay="200" className=" w-full max-w-[540px] lg:max-w-none px-7 lg:px-16 xl:px-[128px]">
+              data-aos-delay="200"
+              className=" w-full max-w-[540px] lg:max-w-none px-7 lg:px-16 xl:px-[128px]"
+            >
               <div className="grid bpurp px-12 lg:px-16 xl:px-[178px] py-10 lg:py-[144px]">
                 <div className="flex flex-row gap-2 lg:gap-8 justify-end">
                   <div className="ab">
                     <div class="w-full h-full inline-flex justify-center items-center">
-                      <Image quality={100}
+                      <Image
+                        quality={100}
                         className="w-[31px] lg:w-[120px]"
                         src={pas1}
                         alt="Liberty Assured"
@@ -838,7 +1003,8 @@ export default function Home() {
 
                   <div className="ab">
                     <div class="w-full h-full inline-flex justify-center items-center">
-                      <Image quality={100}
+                      <Image
+                        quality={100}
                         className="w-[56px] lg:w-[213px]"
                         src={pas2}
                         alt="Liberty Pay"
@@ -851,7 +1017,8 @@ export default function Home() {
 
                   <div className="ab">
                     <div class="w-full h-full inline-flex justify-center items-center">
-                      <Image quality={100}
+                      <Image
+                        quality={100}
                         className="w-[34px] lg:w-[131px]"
                         src={pas3}
                         alt="Winwise"
@@ -863,7 +1030,8 @@ export default function Home() {
                 <div className="flex flex-row gap-2 lg:gap-8 justify-end pt-2 lg:pt-5">
                   <div className="ab">
                     <div class="w-full h-full inline-flex justify-center items-center">
-                      <Image quality={100}
+                      <Image
+                        quality={100}
                         className="w-[39px] lg:w-[147px]"
                         src={pas4}
                         alt="Whisperms"
@@ -876,7 +1044,8 @@ export default function Home() {
 
                   <div className="ab">
                     <div class="w-full h-full inline-flex justify-center items-center">
-                      <Image quality={100}
+                      <Image
+                        quality={100}
                         className="w-[54px] lg:w-[204px]"
                         src={pas6}
                         alt="paybox"
@@ -889,7 +1058,8 @@ export default function Home() {
 
                   <div className="ab">
                     <div class="w-full h-full inline-flex justify-center items-center">
-                      <Image quality={100}
+                      <Image
+                        quality={100}
                         className="w-[69px] lg:w-[231px]"
                         src={pas5}
                         alt="visualplus"
@@ -903,13 +1073,28 @@ export default function Home() {
 
             {/* Absolute Assets */}
             <div className="absolute top-[178px] left-[52px] lg:top-[241px] lg:left-[207px] lg:max-w-[30px] max-w-[11px]">
-              <Image quality={100} className="blink delay" src={vector5} alt="light purple star" />
+              <Image
+                quality={100}
+                className="blink delay"
+                src={vector5}
+                alt="light purple star"
+              />
             </div>
             <div className="absolute hidden lg:block top-[241px] left-[63px] lg:top-[384px] lg:left-[648px] lg:max-w-[21px] max-w-[11px]">
-              <Image quality={100} className="blink" src={vector5} alt="light purple star" />
+              <Image
+                quality={100}
+                className="blink"
+                src={vector5}
+                alt="light purple star"
+              />
             </div>
             <div className="z-50 bottom-[71px] right-[102px] lg:bottom-[204px] lg:right-[648px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[26px] lg:h-8">
-              <Image quality={100} className="w-full h-auto delay blink" src={sstar} alt="white star" />
+              <Image
+                quality={100}
+                className="w-full h-auto delay blink"
+                src={sstar}
+                alt="white star"
+              />
             </div>
           </section>
 
@@ -922,8 +1107,10 @@ export default function Home() {
           <section className="ppat pb-[83px] px-12 lg:px-0 lg:pb-[161px] relative flex flex-col lg:flex-row lg:items-end gap-[144px] lg:gap-[60px] pt-[71px] lg:pt-[169px] lg:pl-[187px]">
             <div className="left">
               <div
-              data-aos="fade-right"
-              data-aos-delay="100" className="left1 grid justify-items-center lg:block text-center lg:text-left">
+                data-aos="fade-right"
+                data-aos-delay="100"
+                className="left1 grid justify-items-center lg:block text-center lg:text-left"
+              >
                 <h2 className="heading2 max-w-[188px] lg:max-w-[300px]">
                   Privacy Policy and <span>Terms</span>
                 </h2>
@@ -936,8 +1123,10 @@ export default function Home() {
                 </h6>
               </div>
               <div
-              data-aos="fade-right"
-              data-aos-delay="200" className="left2 pt-[30px] lg:pt-[69px]">
+                data-aos="fade-right"
+                data-aos-delay="200"
+                className="left2 pt-[30px] lg:pt-[69px]"
+              >
                 <div className="pt-[45px] lg:pt-[50px] px-3 lg:px-[72px] bpurp inline-block">
                   <p className="max-w-[425px] text-center lg:text-left text-[12px] lg:text-[14px] leading-[216%]">
                     At getlinked tech Hackathon 1.0, we value your privacy and
@@ -1007,10 +1196,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div 
+            <div
               data-aos="fade-left"
               data-aos-delay="300"
-              className="right lg:max-w-[559px] max-w-[262px]">
+              className="right lg:max-w-[559px] max-w-[262px]"
+            >
               <Image quality={100} src={Img6x} alt="Security" />
             </div>
             <div className="absolute -z-50 max-w-[249px] lg:max-w-none bottom-[219px] left-[73px] lg:bottom-auto lg:left-auto lg:top-[93px] lg:right-[123px]">
@@ -1019,33 +1209,70 @@ export default function Home() {
 
             {/* Absolute Images */}
             <div className="absolute lg:bottom-[497px] top-[232px] lg:top-auto right-[67px] lg:right-[506px] lg:max-w-[21px] max-w-[11px]">
-              <Image quality={100} className="blink" src={vector5} alt="light purple star" />
+              <Image
+                quality={100}
+                className="blink"
+                src={vector5}
+                alt="light purple star"
+              />
             </div>
             <div className="absolute top-[726px] lg:top-[274px] left-[22px] lg:left-auto lg:right-[753px] max-w-[18px] lg:max-w-[23px]">
-              <Image quality={100} className="blink delay" src={vector6} alt="dark purple star" />
+              <Image
+                quality={100}
+                className="blink delay"
+                src={vector6}
+                alt="dark purple star"
+              />
             </div>
             <div className="absolute bottom-[438px] left-[39px] lg:bottom-[338px] lg:left-[100px] max-w-[18px] lg:max-w-[30px]">
-              <Image quality={100} className="blink" src={vector6} alt="dark purple star" />
+              <Image
+                quality={100}
+                className="blink"
+                src={vector6}
+                alt="dark purple star"
+              />
             </div>
             <div className="z-50 lg:top-[159px] top-[43px] lg:left-[514px] lg:right-auto right-[102px] absolute inline-flex justify-center items-center w-[10px] h-auto lg:w-[21px] lg:h-8">
-              <Image quality={100} className="blink delay w-full h-auto" src={star} alt="grey star" />
+              <Image
+                quality={100}
+                className="blink delay w-full h-auto"
+                src={star}
+                alt="grey star"
+              />
             </div>
             <div className="z-50  bottom-[206px] left-[50px] lg:bottom-[100px] lg:left-[720px] absolute inline-flex justify-center items-center w-[10px] h-auto lg:w-[15px] lg:h-8">
-              <Image quality={100} className="blink w-full h-auto" src={star} alt="grey star" />
+              <Image
+                quality={100}
+                className="blink w-full h-auto"
+                src={star}
+                alt="grey star"
+              />
             </div>
             <div className="z-50 lg:top-[150px] lg:right-[232px] lg:bottom-auto bottom-[430px] right-[121px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[15px] lg:h-8">
-              <Image quality={100} className="blink delay w-full h-auto" src={sstar} alt="white star" />
+              <Image
+                quality={100}
+                className="blink delay w-full h-auto"
+                src={sstar}
+                alt="white star"
+              />
             </div>
             <div className="z-50 bottom-[44px] right-[92px] lg:bottom-[47px] lg:right-[250px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[15px] lg:h-8">
-              <Image quality={100} className="blink w-full h-auto" src={sstar} alt="white star" />
+              <Image
+                quality={100}
+                className="blink w-full h-auto"
+                src={sstar}
+                alt="white star"
+              />
             </div>
           </section>
         </div>
       </main>
 
       <footer
-              data-aos="zoom-in-up"
-              data-aos-delay="100" className="setbody relative bg-[#100B20]">
+        data-aos="zoom-in-up"
+        data-aos-delay="100"
+        className="setbody relative bg-[#100B20]"
+      >
         <div className="">
           <div className="pb-[41px] pt-[70px] pl-16 pr-14 xl:px-[220px]">
             <div className="flex flex-col lg:flex-row gap-[32px] lg:gap-[191px] w-full">
@@ -1182,16 +1409,36 @@ export default function Home() {
           </div>
           {/* Absolute Assets */}
           <div className="absolute lg:bottom-20 lg:left-[740px] bottom-[94px] left-[134px] lg:max-w-[15px] max-w-[7px]">
-            <Image quality={100} className="blink" src={vector5} alt="light purple star" />
+            <Image
+              quality={100}
+              className="blink"
+              src={vector5}
+              alt="light purple star"
+            />
           </div>
           <div className="z-50 top-[368px] right-[174px] lg:top-[99px] lg:right-[430px] absolute inline-flex justify-center items-center w-[10px] h-auto lg:w-[15px] lg:h-8">
-            <Image quality={100} className="blink delay w-full h-auto" src={star} alt="grey star" />
+            <Image
+              quality={100}
+              className="blink delay w-full h-auto"
+              src={star}
+              alt="grey star"
+            />
           </div>
           <div className="z-50 absolute bottom-[190px] right-[77px] lg:bottom-[127px] lg:right-[119px] inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[15px] lg:h-8">
-            <Image quality={100} className="blink w-full h-auto" src={sstar} alt="white star" />
+            <Image
+              quality={100}
+              className="blink w-full h-auto"
+              src={sstar}
+              alt="white star"
+            />
           </div>
           <div className="z-50 top-[128px] left-[36px] lg:left-[105px] lg:top-[107px] absolute inline-flex justify-center items-center w-[10px] h-[12px] lg:w-[15px] lg:h-8">
-            <Image quality={100} className="blink delay w-full h-auto" src={sstar} alt="white star" />
+            <Image
+              quality={100}
+              className="blink delay w-full h-auto"
+              src={sstar}
+              alt="white star"
+            />
           </div>
         </div>
       </footer>

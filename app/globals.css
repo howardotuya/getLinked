@@ -93,6 +93,40 @@ body {
   overflow-x: hidden;
 }
 
+.typewritter {
+  overflow-x: hidden;
+  position: relative;
+  animation: type 3s linear 1s 1 normal both;
+}
+
+.typewritter > h5 {
+  position: relative;
+  animation: typewritter 3s linear 1s 1 normal both;
+  white-space: nowrap;
+}
+
+@keyframes type {
+  0% {
+    border-right: 2px solid #fff;
+  }
+  99% {
+    border-right: 2px solid #fff;
+  }
+  100% {
+    border-right: 2px solid transparent;
+  }
+}
+
+@keyframes typewritter {
+  from {
+    left: calc(100% + 200px)
+  }
+
+  to {
+    left: 0;
+  }
+}
+
 .blink {
   animation: blink 2.6s infinite;
   animation-timing-function: ease-in-out;
@@ -199,7 +233,7 @@ section {
   padding: 31px 34px 40px 0px;
 }
 
-.hb-d1 > h5 {
+.hb-d1 h5 {
   font-size: 16px;
   font-style: italic;
   font-weight: 700;
@@ -764,6 +798,7 @@ section {
 }
 
 @media only screen and (min-width: 1024px) {
+   
   .ab {
     gap: 28px;
   }
@@ -1052,7 +1087,7 @@ section {
     line-height: normal;
   }
 
-  .hb-d1 > h5 {
+  .hb-d1 h5 {
     font-size: 36px;
     font-style: italic;
     font-weight: 700;
