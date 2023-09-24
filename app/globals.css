@@ -82,11 +82,40 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #150e28;
   color: #fff;
   font-family: "Montserrat";
   overflow-x: hidden;
+}
+
+.blink {
+  animation: blink 2.6s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+img {
+  flex-shrink: 0;
+}
+
+.delay {
+  animation-delay: 500ms;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 section {
