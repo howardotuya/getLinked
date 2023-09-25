@@ -83,9 +83,11 @@ export default function Home() {
             <li>Timeline</li>
             <li>Overview</li>
             <li>FAQs</li>
-            <li>Contact</li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
           </ul>
-          <Link className="cta-button1 justify-self-start" href="#">
+          <Link className="cta-button1 justify-self-start" href="/contact">
             Register
           </Link>
         </div>
@@ -93,19 +95,21 @@ export default function Home() {
 
       <header className="setbody relative">
         <div>
-          <nav className="navbar-main">
+          <nav className="navbar-main relative z-[9999]">
             <div className="logo">
-              <span>get</span>
-              <span>linked</span>
+              <Link href="/">
+                <span>get</span>
+                <span>linked</span>
+              </Link>
             </div>
             <div className="nav-hide">
               <ul>
                 <li>Timeline</li>
                 <li>Overview</li>
                 <li>FAQs</li>
-                <li>Contact</li>
+                <Link href="/contact">Contact</Link>
               </ul>
-              <Link href="#">Register</Link>
+              <Link href="/contact">Register</Link>
             </div>
             <div onClick={popuphandler} id="mobile-Hamburger-menu">
               <Image quality={100} src={menu} alt="menu" />
