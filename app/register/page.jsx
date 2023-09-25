@@ -374,7 +374,7 @@ export default function Home() {
                       disabled={isSubmitting}
                       className="cta-button1 self-center lg:w-full"
                     >
-                      {isSubmitting ? "loading..." : "Submit"}
+                      {isSubmitting ? "submitting..." : "Submit"}
                     </button>
                   </form>
                 </div>
