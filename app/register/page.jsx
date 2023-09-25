@@ -140,12 +140,12 @@ export default function Home() {
               </div>
             </div>
             <div className="pt-6 lg:pt-9 flex w-full">
-              <button
-                onClick={closeSuccessModal}
+              <Link
+                href="/"
                 className="bg-grad py-4 rounded flex justify-center items-center w-full"
               >
                 Back
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@ export default function Home() {
         {errorM && (
           <div
             id="error"
-            className="border-l-4 bg-[#FDEFED] border-[#EA5945] p-4 shadow-md flex flex-row gap-14 items-center rounded-[4px] overflow-hidden"
+            className="border-l-4 bg-[#FDEFED] border-[#EA5945] p-4 shadow-md flex flex-row gap-8 lg:gap-14 items-center rounded-[4px] overflow-hidden"
           >
             <div className="flex flex-row gap-2 lg:gap-4 items-center">
               <div className="w-8 h-8 hidden lg:grid grid-cols-1 shrink-0">
@@ -169,15 +169,15 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <h3 className="font-semibold text-[#121212]">Error</h3>
-                <p className="text-sm leading-[150%] lg:leading-[119%] text-[#4d4d4d]">
+                <h3 className="font-bold text-sm text-[#121212]">Error</h3>
+                <p className="text-sm font-medium lg:text-sm leading-[150%] lg:leading-[119%] text-[#6c6c6c]">
                   {errorM}
                 </p>
               </div>
             </div>
             <div
               onClick={closeErrorModal}
-              className="grid grid-cols-1 shrink-0 "
+              className="grid grid-cols-1 cursor-pointer shrink-0 "
             >
               <Image className="w-5 h-5" src={close} alt="close" />
             </div>
