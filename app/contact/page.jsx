@@ -63,19 +63,21 @@ export default function Home() {
         </nav>
 
         <header className="relative w-full disappear">
-          <nav className="navbar-main w-full">
+          <nav className="navbar-main w-full relative z-[9999]">
             <div className="logo">
-              <span>get</span>
-              <span>linked</span>
+              <Link href="/">
+                <span>get</span>
+                <span>linked</span>
+              </Link>
             </div>
             <div className="nav-hide">
               <ul>
                 <li>Timeline</li>
                 <li>Overview</li>
                 <li>FAQs</li>
-                <li>Contact</li>
+                <Link href="/contact">Contact</Link>
               </ul>
-              <Link href="#">Register</Link>
+              <Link href="/register">Register</Link>
             </div>
             <div onClick={popuphandler} id="mobile-Hamburger-menu">
               <Image quality={100} src={menu} alt="menu" />

@@ -161,7 +161,7 @@ export default function Home() {
                 win a Big prize
               </p>
               <div>
-                <Link className="cta-button1" href="#">
+                <Link className="cta-button1" href="/register">
                   Register
                 </Link>
               </div>

@@ -67,19 +67,21 @@ export default function Home() {
         </nav>
 
         <header className="relative w-full disappear">
-          <nav className="navbar-main w-full">
+          <nav className="navbar-main w-full relative z-[9999]">
             <div className="logo">
-              <span>get</span>
-              <span>linked</span>
+              <Link href="/">
+                <span>get</span>
+                <span>linked</span>
+              </Link>
             </div>
             <div className="nav-hide">
               <ul>
                 <li>Timeline</li>
                 <li>Overview</li>
                 <li>FAQs</li>
-                <li>Contact</li>
+                <Link href="/contact">Contact</Link>
               </ul>
-              <Link href="#">Register</Link>
+              <Link href="/register">Register</Link>
             </div>
             <div onClick={popuphandler} id="mobile-Hamburger-menu">
               <Image quality={100} src={menu} alt="menu" />
@@ -124,22 +126,34 @@ export default function Home() {
                   <div className="grid gap-[18px] lg:gap-8">
                     <div className="form-one">
                       <div>
-                        <label>Team's Name</label>
-                        <input type="text" placeholder="Howard Otuya" />
+                        <label>Team&apos;s Name</label>
+                        <input
+                          type="text"
+                          placeholder="Enter the name of your group"
+                        />
                       </div>
                       <div>
                         <label>Phone</label>
-                        <input type="text" placeholder="Howard Otuya" />
+                        <input
+                          type="text"
+                          placeholder="Enter your phone number"
+                        />
                       </div>
                     </div>
                     <div className="form-one">
                       <div>
                         <label>Email</label>
-                        <input type="text" placeholder="Howard Otuya" />
+                        <input
+                          type="text"
+                          placeholder="Enter your email address"
+                        />
                       </div>
                       <div>
                         <label>Project Topic</label>
-                        <input type="text" placeholder="Howard Otuya" />
+                        <input
+                          type="text"
+                          placeholder="What is your group project topic"
+                        />
                       </div>
                     </div>
                     <div className="form-two">
@@ -180,7 +194,9 @@ export default function Home() {
                       policy
                     </label>
                   </div>
-                  <button className="cta-button1 self-center lg:w-full">Submit</button>
+                  <button className="cta-button1 self-center lg:w-full">
+                    Submit
+                  </button>
                 </form>
               </div>
             </div>
