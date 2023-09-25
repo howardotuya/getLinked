@@ -112,7 +112,7 @@ export default function Home() {
               <Link href="/register">Register</Link>
             </div>
             <div onClick={popuphandler} id="mobile-Hamburger-menu">
-              <Image quality={100} src={menu} alt="menu" />
+              <Image priority quality={100} src={menu} alt="menu" />
             </div>
           </nav>
         </div>
