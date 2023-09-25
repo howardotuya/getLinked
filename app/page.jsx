@@ -73,7 +73,7 @@ export default function Home() {
     <>
       <nav
         id="mobile-sidebar"
-        className="fixed hidden top-0 bottom-0 right-0 left-0 bg-[#150e28] z-[999]"
+        className="fixed hidden top-0 bottom-0 right-0 left-0 bg-[#150e28] z-[9999999]"
       >
         <div className="pt-10 pl-12 pr-[52px] grid">
           <div onClick={popuphandler} className="self-end justify-self-end">
