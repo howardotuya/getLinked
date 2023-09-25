@@ -275,7 +275,7 @@ export default function Home() {
               data-aos-delay="100"
               className="left max-w-[264px] lg:max-w-[490px] h-auto w-full"
             >
-              <Image quality={100} src={Img1} alt="The Big Idea" />
+              <Image quality={100} src={Img1} alt="The Big Idea" placeholder="blur" />
             </div>
             <div className="bigIdea-right">
               <h2
@@ -352,13 +352,13 @@ export default function Home() {
               <Image
                 quality={100}
                 className="hidden lg:block w-full h-auto shrink-0"
-                src={Img2}
+                src={Img2} placeholder="blur"
                 alt="Woman sitting"
               />
               <Image
                 quality={100}
                 className="lg:hidden block w-full h-auto shrink-0"
-                src={Img22}
+                src={Img22} placeholder="blur"
                 alt="woman sitting"
               />
             </div>
@@ -397,7 +397,7 @@ export default function Home() {
           {/* Judging Criteria Key attributes */}
           <section className="jcka">
             <div data-aos="fade-right" data-aos-delay="100" className="left">
-              <Image quality={100} src={Img3} alt="Metric" />
+              <Image quality={100} src={Img3} placeholder="blur" alt="Metric" />
             </div>
             <div className="right">
               <div>
@@ -533,7 +533,7 @@ export default function Home() {
               data-aos-delay="100"
               className="right lg:max-w-[741px]"
             >
-              <Image quality={100} src={Img4} alt="Thinking" />
+              <Image quality={100} src={Img4} placeholder="blur" alt="Thinking" />
             </div>
 
             {/* absolute Images */}
@@ -874,7 +874,7 @@ export default function Home() {
                 data-aos-delay="200"
                 className="left max-w-[321px] lg:max-w-none"
               >
-                <Image quality={100} src={Img5} alt="Prizes and Rewards" />
+                <Image placeholder="blur" quality={100} src={Img5} alt="Prizes and Rewards" />
               </div>
 
               <div data-aos="fade-down" data-aos-delay="300" className="right">
@@ -996,7 +996,7 @@ export default function Home() {
                       <Image
                         quality={100}
                         className="w-[31px] lg:w-[120px]"
-                        src={pas1}
+                        src={pas1}  placeholder="blur"
                         alt="Liberty Assured"
                       />
                     </div>
@@ -1010,7 +1010,7 @@ export default function Home() {
                       <Image
                         quality={100}
                         className="w-[56px] lg:w-[213px]"
-                        src={pas2}
+                        src={pas2}  placeholder="blur"
                         alt="Liberty Pay"
                       />
                     </div>
@@ -1024,7 +1024,7 @@ export default function Home() {
                       <Image
                         quality={100}
                         className="w-[34px] lg:w-[131px]"
-                        src={pas3}
+                        src={pas3}  placeholder="blur"
                         alt="Winwise"
                       />
                     </div>
@@ -1037,7 +1037,7 @@ export default function Home() {
                       <Image
                         quality={100}
                         className="w-[39px] lg:w-[147px]"
-                        src={pas4}
+                        src={pas4}  placeholder="blur"
                         alt="Whisperms"
                       />
                     </div>
@@ -1051,7 +1051,7 @@ export default function Home() {
                       <Image
                         quality={100}
                         className="w-[54px] lg:w-[204px]"
-                        src={pas6}
+                        src={pas6}  placeholder="blur"
                         alt="paybox"
                       />
                     </div>
@@ -1065,7 +1065,7 @@ export default function Home() {
                       <Image
                         quality={100}
                         className="w-[69px] lg:w-[231px]"
-                        src={pas5}
+                        src={pas5}  placeholder="blur"
                         alt="visualplus"
                       />
                     </div>
@@ -1205,7 +1205,7 @@ export default function Home() {
               data-aos-delay="300"
               className="right lg:max-w-[559px] max-w-[262px]"
             >
-              <Image quality={100} src={Img6x} alt="Security" />
+              <Image  placeholder="blur" quality={100} src={Img6x} alt="Security" />
             </div>
             <div className="absolute -z-50 max-w-[249px] lg:max-w-none bottom-[219px] left-[73px] lg:bottom-auto lg:left-auto lg:top-[93px] lg:right-[123px]">
               <Image quality={100} src={vector1z} alt="" />

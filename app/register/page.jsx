@@ -96,7 +96,7 @@ export default function Home() {
             </h1>
             <div className="left-one lg:absolute top-0 left-0">
               <div className="max-w-[195px] lg:max-w-[717px]">
-                <Image src={register} alt="" />
+                <Image placeholder="blur" src={register} alt="3d-graphic-designer-showing-thumbs-up-png 1" />
               </div>
             </div>
             <div className="right-one z-50 relative lg:bg-[#150e28] lg:self-end w-full max-w-[740px]">
