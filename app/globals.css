@@ -481,6 +481,20 @@ section {
   );
 }
 
+.bg-grad {
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+}
+
+button:disabled {
+  opacity: .8;
+}
+
 .jcka > div.right > div:nth-of-type(2) {
   display: grid;
   padding-top: 20px;
@@ -808,7 +822,8 @@ section {
   padding: 12px 16px;
 }
 
-input::placeholder, select::placeholder {
+input::placeholder,
+select::placeholder {
   font-size: 14px;
 }
 
@@ -876,8 +891,16 @@ select {
   background-size: 7px !important;
 }
 
-@media only screen and (min-width: 1024px) {
+.opabg {
+  background: rgba(21, 14, 40, 0.93);
+}
 
+.inner-bgx {
+  border-radius: 5px;
+  border: 1px solid #d434fe;
+}
+
+@media only screen and (min-width: 1024px) {
   .form-two > div:nth-of-type(2) {
     max-width: none;
   }
@@ -899,7 +922,8 @@ select {
     column-gap: 32px;
   }
 
-  input::placeholder, select::placeholder {
+  input::placeholder,
+  select::placeholder {
     font-size: 16px;
   }
 
