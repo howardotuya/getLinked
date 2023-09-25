@@ -87,7 +87,7 @@ export default function Home() {
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
-          <Link className="cta-button1 justify-self-start" href="/contact">
+          <Link className="cta-button1 justify-self-start" href="/register">
             Register
           </Link>
         </div>
@@ -109,7 +109,7 @@ export default function Home() {
                 <li>FAQs</li>
                 <Link href="/contact">Contact</Link>
               </ul>
-              <Link href="/contact">Register</Link>
+              <Link href="/register">Register</Link>
             </div>
             <div onClick={popuphandler} id="mobile-Hamburger-menu">
               <Image quality={100} src={menu} alt="menu" />

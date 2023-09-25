@@ -206,7 +206,7 @@ export default function Home() {
             alt="white star"
           />
         </div>
-        <div className="top-[424px] left-[36px] lg:left-0 lg:top-[203px] lg:right-[212px] z-50 absolute inline-flex justify-center items-center w-[14px] lg:w-[26px]">
+        <div className="top-[424px] left-[36px] lg:left-auto lg:top-[203px] lg:right-[212px] z-50 absolute inline-flex justify-center items-center w-[14px] lg:w-[26px]">
           <Image
             quality={100}
             className="blink delay w-full h-auto"
