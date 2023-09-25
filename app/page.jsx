@@ -179,7 +179,7 @@ export default function Home() {
               </div>
             </div>
             <div className="absolute grayscale max-w-[419px] lg:max-w-none right-0 bottom-0 ">
-              <Image quality={100} src={LImg1} alt="change" />
+              <Image quality={100} placeholder="blur" src={LImg1} alt="change" />
             </div>
 
             {/* Here are absolute Images at the right side - blue and metric asset */}
