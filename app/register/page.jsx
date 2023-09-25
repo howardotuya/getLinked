@@ -10,6 +10,13 @@ import register from "@/public/images/register.png";
 import mwalk from "@/public/images/mwalk.png";
 import fwalk from "@/public/images/fwalk.png";
 import line from "@/public/images/line.svg";
+import vector19 from "@/public/images/vector19.png";
+import vector20 from "@/public/images/vector20.png";
+import vector15 from "@/public/images/vector15.png";
+import star from "@/public/images/star.png";
+import sstar from "@/public/images/sstar.png";
+import vector5 from "@/public/images/vector5.png";
+import vector6 from "@/public/images/vector6.png";
 
 export default function Home() {
   useEffect(() => {
@@ -80,7 +87,7 @@ export default function Home() {
           </nav>
         </header>
 
-        <main className="lg:py-[43px] lg:pr-[104px] lg:pb-[56px]">
+        <main className="lg:pt-[43px] lg:pr-[104px] pb-[56px]">
           <div className="contact-container relative flex flex-col lg:flex-row justify-center items-center lg:justify-end lg:items-end">
             <h1 className="text-[#D434FE] block lg:hidden self-start pl-16 text-[16px] pt-6 pb-8 font-semibold lg:text-[32px] clashd">
               Register
@@ -90,7 +97,7 @@ export default function Home() {
                 <Image src={register} alt="" />
               </div>
             </div>
-            <div className="right-one z-50 relative bg-[#150e28] lg:self-end w-full max-w-[740px]">
+            <div className="right-one z-50 relative lg:bg-[#150e28] lg:self-end w-full max-w-[740px]">
               <div className="inner-bg register-bg lg:py-[65px] px-16 lg:px-[92px]">
                 <div>
                   <h1 className="text-[#D434FE] hidden lg:block font-semibold text-[32px] clashd">
@@ -109,7 +116,7 @@ export default function Home() {
                       <Image src={line} alt="Line" />
                     </div>
                   </h6>
-                  <h2 className="pt-5 text-[20px] lg:text-[24px]">
+                  <h2 className="lg:pt-5 pt-3 text-[20px] lg:text-[24px]">
                     CREATE YOUR ACCOUNT
                   </h2>
                 </div>
@@ -181,18 +188,17 @@ export default function Home() {
         </main>
 
         {/* Absolute Purple Blur Images */}
-        {/* <div className="absolute hidden lg:block mix-blend-hard-light -z-50 left-0 top-0">
-          <Image src={vector17} alt="purple blur" />
+        <div className="absolute hidden lg:block mix-blend-hard-light -z-50 left-0 top-0">
+          <Image src={vector19} alt="purple blur" />
         </div>
         <div className="absolute hidden lg:block mix-blend-hard-light -z-50 right-0 bottom-0">
-          <Image src={vector18} alt="purple blur" />
+          <Image src={vector20} alt="purple blur" />
         </div>
         <div className="absolute mix-blend-hard-light block lg:hidden top-0 left-0 -z-50">
           <Image quality={100} src={vector15} alt="Purple Blur" />
-        </div> */}
+        </div>
 
-        {/* Star Images */}
-        {/* <div className="bottom-[210px] right-[27px] lg:bottom-auto lg:top-[835px] lg:right-[128px] z-50 absolute inline-flex justify-center items-center w-[10px] lg:w-[15px]">
+        <div className="hidden lg:inline-flex bottom-[46px] right-[204px] z-50 absolute justify-center items-center w-[10px] lg:w-[15px]">
           <Image
             quality={100}
             className="blink w-full h-auto"
@@ -200,7 +206,15 @@ export default function Home() {
             alt="white star"
           />
         </div>
-        <div className="top-[138px] right-[57px] lg:top-[167px] lg:right-[235px] z-50 absolute inline-flex justify-center items-center w-[16px] lg:w-[26px]">
+        <div className="top-[424px] left-[36px] lg:left-0 lg:top-[203px] lg:right-[212px] z-50 absolute inline-flex justify-center items-center w-[14px] lg:w-[26px]">
+          <Image
+            quality={100}
+            className="blink delay w-full h-auto"
+            src={star}
+            alt="grey star"
+          />
+        </div>
+        <div className="hidden lg:bottom-[139px] lg:left-[106px] z-50 absolute lg:inline-flex justify-center items-center w-[16px] lg:w-[26px]">
           <Image
             quality={100}
             className="blink w-full h-auto"
@@ -208,22 +222,22 @@ export default function Home() {
             alt="grey star"
           />
         </div>
-        <div className="bottom-[133px] lg:bottom-auto lg:top-[698px] left-[34px] lg:left-auto lg:right-[809px] absolute max-w-[12px] lg:max-w-[30px]">
+        <div className="bottom-[220px] left-[596px] hidden lg:block absolute max-w-[12px] lg:max-w-[30px]">
           <Image
             quality={100}
-            className="blink"
+            className="blink delay"
             src={vector6}
             alt="dark purple star"
           />
         </div>
-        <div className="top-[67px] left-[183px] lg:top-[200px] lg:left-[205px] absolute lg:max-w-[21px] max-w-[11px]">
+        <div className="top-[161px] right-[57px] lg:right-auto lg:top-[200px] lg:left-[205px] absolute lg:max-w-[21px] max-w-[11px]">
           <Image
             quality={100}
             className="blink"
             src={vector5}
             alt="light purple star"
           />
-        </div> */}
+        </div>
       </div>
     </div>
   );

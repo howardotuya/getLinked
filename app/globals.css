@@ -878,6 +878,10 @@ select {
 
 @media only screen and (min-width: 1024px) {
 
+  .form-two > div:nth-of-type(2) {
+    max-width: none;
+  }
+
   select {
     font-size: 16px;
     background-size: 10.5px !important;
