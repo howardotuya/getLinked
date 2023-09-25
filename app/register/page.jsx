@@ -92,9 +92,11 @@ export default function Home() {
           console.log(res);
           setIsSubmitting(true);
           setSuccessM("success");
+          setErrorM("");
         })
         .catch((e) => {
           setIsSubmitting(false);
+          setSuccessM("");
           setErrorM(e.response.data.email[0]);
           console.log(e.response.data.email[0]);
         });

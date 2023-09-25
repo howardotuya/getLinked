@@ -79,10 +79,12 @@ export default function Home() {
         .then((res) => {
           setIsSubmitting(true);
           setSuccessM("Message Sent.");
+          setErrorM("")
           console.log(res);
         })
         .catch((e) => {
           setIsSubmitting(false);
+          setSuccessM("")
           setErrorM("Kindly try again, message failed to send.");
           console.log(e);
         });
