@@ -164,7 +164,7 @@ section {
   line-height: normal;
 }
 
-.logo  span:nth-of-type(2) {
+.logo span:nth-of-type(2) {
   color: #d434fe;
 }
 
@@ -798,13 +798,18 @@ section {
 }
 
 .contact-container input,
-.contact-container textarea {
+.contact-container textarea,
+.contact-container select {
   border-radius: 4px;
   border: 1px solid #fff;
   background: rgba(255, 255, 255, 0.03);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 100%;
-  padding: 14px 28px;
+  padding: 12px 16px;
+}
+
+input::placeholder, select::placeholder {
+  font-size: 14px;
 }
 
 .contact-container textarea {
@@ -815,11 +820,115 @@ section {
   display: none !important;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   opacity: 0.8;
 }
 
+.form-one {
+  display: grid;
+  row-gap: 18px;
+}
+
+.form-one > div {
+  display: grid;
+  gap: 4px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("/images/down.svg") no-repeat !important;
+  background-position: right 12px center !important;
+}
+
+select::after {
+  padding-right: 40px;
+}
+
+/* Hide the default checkbox */
+.larger {
+  width: 14px !important;
+  height: 14px;
+  border-radius: 2px;
+  border: 2px solid #fff;
+  background-color: #150e28 !important;
+  padding: 0px !important;
+}
+
+label {
+  font-size: 13px;
+}
+
+.form-two {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+}
+
+.form-two > div:nth-of-type(2) {
+  max-width: 90px;
+}
+
+select {
+  font-size: 12px;
+  background-size: 7px !important;
+}
+
 @media only screen and (min-width: 1024px) {
+
+  select {
+    font-size: 16px;
+    background-size: 10.5px !important;
+    background-position: right 20px center !important;
+  }
+
+  .form-two > div {
+    display: grid;
+    gap: 12px;
+  }
+
+  .form-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+  }
+
+  input::placeholder, select::placeholder {
+    font-size: 16px;
+  }
+
+  .contact-container input,
+  .contact-container textarea,
+  .contact-container select {
+    border-radius: 4px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 14px 28px;
+  }
+  .form-one > div {
+    display: grid;
+    gap: 12px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .form-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+  }
+
+  .register-bg {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
   .disappear {
     display: flex !important;
   }
@@ -833,6 +942,7 @@ a:hover, button:hover {
   .ab {
     gap: 28px;
   }
+
   .line {
     background-color: #d434fe;
     height: 4px;
