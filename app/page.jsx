@@ -77,7 +77,7 @@ export default function Home() {
       >
         <div className="pt-10 pl-12 pr-[52px] grid">
           <div onClick={popuphandler} className="self-end justify-self-end">
-            <Image quality={100} src={cancel} alt="cancel" />
+            <Image priority quality={100} src={cancel} alt="cancel" />
           </div>
           <ul className="grid pt-14 pb-7 font-medium gap-y-5">
             <li>Timeline</li>
