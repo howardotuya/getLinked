@@ -77,7 +77,7 @@ export default function Home() {
       axios
         .post(url, body, config)
         .then((res) => {
-          setIsSubmitting(true);
+          setIsSubmitting(false);
           setSuccessM("Message Sent.");
           setErrorM("")
           console.log(res);

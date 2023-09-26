@@ -90,7 +90,7 @@ export default function Home() {
         .post(url, body, config)
         .then((res) => {
           console.log(res);
-          setIsSubmitting(true);
+          setIsSubmitting(false);
           setSuccessM("success");
           setErrorM("");
         })
